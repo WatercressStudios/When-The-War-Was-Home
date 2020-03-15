@@ -1,2 +1,2 @@
 # When The War Was Home
- This is our NaNoReNo 2020 VN. 
+ This is our NaNoReNo 2020 Visual Novel. 
