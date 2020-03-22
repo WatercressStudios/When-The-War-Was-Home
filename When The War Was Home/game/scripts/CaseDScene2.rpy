@@ -178,3 +178,4 @@ label CaseDS2:
     "Aarul tried to sound casual with that question. It's clear he cares more about it than he's letting on."
 
     "I smile and decide to keep the answer to myself."
+    jump CaseEScene1
