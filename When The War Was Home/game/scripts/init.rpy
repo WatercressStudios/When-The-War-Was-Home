@@ -4,7 +4,7 @@
 define mc = Character("Imani",  what_color="#f4d6a7")
 define m = Character("Miranda",  what_color="#A4FBFE")
 define ai = Character("Ai")
-define son = Character("Aarul")
+define son = Character("Aarul", who_color="#FFA500")
 define fly = Character("Jason", who_color="#FF8000")
 define p1 = Character("Patient", who_color="#0000FF")
 define ric = Character("Richter", who_color="#FF0000")
@@ -16,6 +16,8 @@ define G2 = Character("Player 2", who_color="#ffffff")
 define G3 = Character("Player 3", who_color="#ffffff")
 define G4 = Character("Player 4", who_color="#ffffff")
 define GF3 = Character("Player 5", who_color="#ffffff")
+define bui = Character("Winston", who_color="#FFC0CB")
+define fri = Character("Charlotte", who_color="#D2691E")
 
 
 ## The script of the game goes in this file.
