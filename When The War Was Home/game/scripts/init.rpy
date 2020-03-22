@@ -3,8 +3,10 @@
 # callback=speaker is needed for mouth flaps
 define mc = Character("Imani",  what_color="#f4d6a7")
 define m = Character("Miranda",  what_color="#A4FBFE")
-define p1 = Character("Patient")
-define son = Character("son")
+define ai = Character("Ai")
+define son = Character("Aarul")
+define ric = Character("Richter", what_color="#FF0000")
+define rto = Character("Radio Telephone Operator")
 
 ## The script of the game goes in this file.
 
