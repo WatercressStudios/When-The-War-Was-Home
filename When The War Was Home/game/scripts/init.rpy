@@ -5,8 +5,11 @@ define mc = Character("Imani",  what_color="#f4d6a7")
 define m = Character("Miranda",  what_color="#A4FBFE")
 define ai = Character("Ai")
 define son = Character("Aarul")
-define ric = Character("Richter", what_color="#FF0000")
+define fly = Character("Aarul")
+define p1 = Character("Patient", who_color="#0000FF")
+define ric = Character("Richter", who_color="#FF0000")
 define rto = Character("Radio Telephone Operator")
+
 
 ## The script of the game goes in this file.
 
