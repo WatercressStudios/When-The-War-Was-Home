@@ -41,7 +41,9 @@ label intro:
     "Just gotta {b}pick a patient file{/b}, and then {b}pick a day{/b} on the calendar. How hard can it be?"
 
     # highlight the CALENDAR button
+    jump choice
 
+label intro2:
     # after the player schedules in a day, show the clinic again.
 
     son "Hey, I see you've scheduled it correctly. Nice job, Imi!"
@@ -111,17 +113,17 @@ label intro:
 # fade to black
 # fade to flackback BG - zoom in at the sofa at the clinic, flipped, black and white? sepia?
 
-    "I was in my final year of mechanical engineering, watching TV in my dorm, when my life changed forever."
-
-    "The usual programming was interrupted, replaced by an emergency breaking news."
-
-
-    "They assassinated a diplomat who was at a summit for peace talks."
-
-    "Each of us knew what that meant."
-
-    "We were at war."
+    # "I was in my final year of mechanical engineering, watching TV in my dorm, when my life changed forever."
+    #
+    # "The usual programming was interrupted, replaced by an emergency breaking news."
+    #
+    #
+    # "They assassinated a diplomat who was at a summit for peace talks."
+    #
+    # "Each of us knew what that meant."
+    #
+    # "We were at war."
 
 # END SCENE, FADE TO BLACK
     scene black with dissolve
-    jump MainCaseCall1
+    jump main1

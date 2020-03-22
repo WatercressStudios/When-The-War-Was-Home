@@ -1,4 +1,4 @@
-label CaseDS2:
+label d2:
     son "Wow, you weren't kidding. That wall's about to crumble."
 
     mc "Shh, not so loud, he can hear you."
@@ -178,4 +178,4 @@ label CaseDS2:
     "Aarul tried to sound casual with that question. It's clear he cares more about it than he's letting on."
 
     "I smile and decide to keep the answer to myself."
-    jump CaseEScene1
+    jump choice

@@ -1,5 +1,5 @@
 
-label CaseDS1:
+label d1:
     # BG sky with black snow
 
     "It's freezing today. The forecast said we might get some sunlight about now."
@@ -324,5 +324,4 @@ label CaseDS1:
 
     # fade to black, hiding the conversation
     # End scene
-    jump CaseDS2
-
+    jump choice

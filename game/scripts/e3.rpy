@@ -1,7 +1,7 @@
     #bg fades in
 
     #bg is a darker version from the previous bg?
-label CaseEScene3:
+label e3:
     "Where am I?!"
 
     "I’m back in the present. I am myself..."
@@ -22,27 +22,27 @@ label CaseEScene3:
 
     m "You asked me if I lived alone."
 
-    mc "Yes, ma’am. I did."  
+    mc "Yes, ma’am. I did."
 
     m "Well, now you know why."
 
     "Miranda’s eyes are heavy with a terrible burden."
 
-    m "I can’t stop hearing her cry."  
+    m "I can’t stop hearing her cry."
 
     mc "..."
 
     m "I try to keep busy. I try to entertain myself, but it’s all just a distraction."
 
-    m "Tell me, doc." 
+    m "Tell me, doc."
 
     m "Do you think I did wrong?"
 
-    mc "I’m here to help you heal, Miranda. Not to pass judgment."  
+    mc "I’m here to help you heal, Miranda. Not to pass judgment."
 
     m "Will the dreams go away? Will I stop hearing her cries?"
 
-    mc "I don’t think so, not yet anyway. But I do know that you are not alone."  
+    mc "I don’t think so, not yet anyway. But I do know that you are not alone."
 
     mc "The guilt that you feel isn’t something that medicine can cure."
 
@@ -81,5 +81,4 @@ label CaseEScene3:
     "I may need help sleeping tonight, myself."
 
     mc "I think I need to take the rest of the day off."
-    return
-
+    jump choice

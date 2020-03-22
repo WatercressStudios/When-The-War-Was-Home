@@ -1,11 +1,11 @@
-label CaseEScene2:    
+label e2:
     "As I navigate the web of her memories, I'm able to see, touch, smell, and hear everything that she has experienced."
 
     "I easily find the source of her emotional turmoil."
 
     "The mechanical whine and thud of heavy mechs, distant gunfire echoing among ruined buildings, the heavy haze of smoke settled among the rubble-strewn landscape."
 
-    "Miranda is on foot, accompanied by her squad, in pursuit of several enemy combatants."  
+    "Miranda is on foot, accompanied by her squad, in pursuit of several enemy combatants."
 
     "The enemy soldiers enter a building, slamming the door behind them."
 
@@ -41,7 +41,7 @@ label CaseEScene2:
 
     "The young man's rifle flashes and Miranda squeezes her own trigger one last time."
 
-    "The younger male falls, blood quickly darkening a grey shirt - not a uniform..." 
+    "The younger male falls, blood quickly darkening a grey shirt - not a uniform..."
 
     "Three seconds pass in silence."
 
@@ -51,11 +51,11 @@ label CaseEScene2:
 
     "The girl calls to her family in a quavering, questioning voice. Nobody answers."
 
-    Girl "Kahlil…" 
+    Girl "Kahlil…"
 
     "The girl's words become louder, more urgent, more panicked."
 
-    Girl "Anse na Khalil!" 
+    Girl "Anse na Khalil!"
 
     "Still, nobody answers."
 
@@ -63,7 +63,7 @@ label CaseEScene2:
 
     "The deep maroon reaches the striking yellows and greens of the girl's dress, drowning them forever."
 
-    "Miranda's gaze is fixed on the scene before her, the audio picking up every plaintive, tragic cry of the little girl." 
+    "Miranda's gaze is fixed on the scene before her, the audio picking up every plaintive, tragic cry of the little girl."
 
     "The squad radio channel crackles to life."
 
@@ -71,7 +71,7 @@ label CaseEScene2:
 
     "The other squads acknowledge the new orders."
 
-    RTO "Corporal Bates, do you copy?"  
+    RTO "Corporal Bates, do you copy?"
 
     m "..."
 
@@ -80,7 +80,4 @@ label CaseEScene2:
     m "First squad copies. En route."
 
     m "Let's move."
-    jump CaseEScene3  
-
-
-
+    jump e3

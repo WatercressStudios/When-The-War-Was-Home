@@ -31,4 +31,5 @@ define Girl = Character("Little Girl", who_color="#6082b6", what_color="FADFAE")
 # ai: Ai [Main Case Patient, female pronouns, Chinese name for "lovely"]
 # rto: Radio Telephone Operator [Specific to Case E Scene 2]
 
-
+label start:
+    jump intro

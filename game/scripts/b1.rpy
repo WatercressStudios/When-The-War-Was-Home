@@ -1,4 +1,4 @@
-label CaseB:
+label b1:
     #Case B
     #Wolf's Territory
     #Scene 1: "Save 'Em, Too."
@@ -91,4 +91,4 @@ label CaseB:
     "He reclines back in the operating chair, and I get to work."
 
     #Fade to black
-    jump CaseCS1
+    jump choice

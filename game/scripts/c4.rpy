@@ -1,4 +1,4 @@
-label CaseCS4:
+label c4:
     son "Imi! Give me a call as soon as you're done, alright!?"
 
     mc "I know, I know! See you later!"
@@ -281,7 +281,7 @@ label CaseCS4:
 
     mc "Do you have {i}any{/i} idea how tired--"
 
-    bar "Oh, I'm in!" 
+    bar "Oh, I'm in!"
 
     mc "You too!?"
 
@@ -362,4 +362,5 @@ label CaseCS4:
     bar "I know, I know."
 
     "Eliza smiles with a chuckle, drinking down the last of her glass."
-    jump CaseDS1
+
+    jump choice
