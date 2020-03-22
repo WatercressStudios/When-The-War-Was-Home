@@ -1,4 +1,4 @@
-label CaseCS3:
+label c3:
 
     "Twentyone hundred. The night before Eliza   's operation."
 
@@ -118,7 +118,7 @@ label CaseCS3:
 
     son "Anytime, anytime. Say, could you pass me the--"
 
-    ##RING RING BASTARDS 
+    ##RING RING BASTARDS
     ##PHONE CALL SFX
     "A ringing sound echoes out from the living room."
 
@@ -195,5 +195,3 @@ label CaseCS3:
     "Aarul and I spend the rest of the night eating our food, winding down before the day concludes."
 
     "And before we know it… the next morning arrives."
-
-    jump CaseCS4

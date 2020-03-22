@@ -1,4 +1,4 @@
-label CaseCS2:
+label c2:
     mc "And you're sure you will have time, right?"
 
     bar "I'm sure, I'm sure."
@@ -153,9 +153,9 @@ label CaseCS2:
 
     #The scene pixelates and skips.
 
-    G4 "No {b}fucking{b} way you pulled that shit off. I had the Big Joker {i}and{i} the King!" 
+    G4 "No {b}fucking{b} way you pulled that shit off. I had the Big Joker {i}and{i} the King!"
 
-    G2 "We warned your stupid ass, you’re the one who went big-nuts anyway." 
+    G2 "We warned your stupid ass, you’re the one who went big-nuts anyway."
 
     G4 "Okay bits ‘n pieces, shuffle that shit and deal. I got these big nuts for you right here."
 
@@ -436,8 +436,3 @@ label CaseCS2:
     mc "Talk to you tomorrow."
 
     son "Yeah.  Night, Imi."
-    jump CaseCS3
-
-
-
-

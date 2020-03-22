@@ -1,5 +1,5 @@
 
-label CaseA:
+label a1:
 
     #*ringing sfx*
     #*click sfx*
@@ -19,7 +19,7 @@ label CaseA:
     #*click sfx*
     "Welp, that's today settled for. It's gonna take a while to reach his standards, but I shouldn't complain. An easy job and good pay."
     "Now, where'd did I leave the sander? Still gotta be around here from his last visit"
-    #*rummaging folly sfx* 
+    #*rummaging folly sfx*
     #*doorbell sfx*
     "Right on cue."
     #show ric
@@ -66,7 +66,7 @@ label CaseA:
     "Richter gently grabs my sleeve, with a slight unwieldy shake."
     ric "About that… c-can we leave that in?"
     "I can’t quite figure out what to say. He still doesn’t look at me, or anything in particular."
-    "The superstar that walked in the door is gone. I sit next to him, putting my arm around him" 
+    "The superstar that walked in the door is gone. I sit next to him, putting my arm around him"
     mc "What was the mission?"
     ric "Western maneuver of Operation Phalanx. Move to defensive positions in a border town and prepare for a possible siege."
     ric "We received intelligence there was going to be attempted raids across the border, but that didn’t matter. Not to the people."
@@ -76,7 +76,7 @@ label CaseA:
     ric "We eventually got the go-ahead to push forward, but, I… I don’t want to. I don’t want to let it go."
     mc "You don’t have to let go of it. It’s important. "
     mc "Not everyone needs our help, or wants it, but it's important to reach out and at least offer a hand."
-    #ric "I- I want... Please, let me, accept m-m..."    
+    #ric "I- I want... Please, let me, accept m-m..."
     #Wolf's Temp Replacement:
     ric "I-I want... I don't know. I wish things were different."
     # VA: sniffs/cries a little at the start of line
@@ -88,7 +88,6 @@ label CaseA:
     ric "Thank you, Doctor."
     mc "Com’on, Ric. Doc doesn’t need formality"
     ric "Hehe, maybe so, but you at least deserve it."
-    jump CaseB
 
-    #Dear Sagi, there should be a call or a notification for this case or case B. 
-    #I am just letting you know that for now, I just made it all linear. 
+    #Dear Sagi, there should be a call or a notification for this case or case B.
+    #I am just letting you know that for now, I just made it all linear.

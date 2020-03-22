@@ -1,5 +1,5 @@
 
-label MainCaseCall1:
+label main1:
 ##NOTE FOR EDITORS
 ##Scene uses a placeholder name for the doctor - Dr. Avery, or 'Ave' as Aarul's nickname for them.  MC is nonbinary, terms mom/dad don't fit - will look into what Aarul calls them another time.  If the term changes, edit mentions of Ave/Avery accordingly!
 ##
@@ -67,7 +67,7 @@ label MainCaseCall1:
 
     son "You know how it is, you're either stuck waiting for something to happen or life is rushing you down somehow."
 
-    mc "I've been there before."  
+    mc "I've been there before."
 
     mc "But it's okay to take things slowly, right?  You're safe, there's no need to rush."
 
@@ -158,4 +158,4 @@ label MainCaseCall1:
     son "Night Ave. Bug you about work tomorrow!"
 
     ##Some sort of transition out of the scene, dunno what yet.
-    jump CaseA
+    #jump 

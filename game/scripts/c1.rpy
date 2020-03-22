@@ -1,5 +1,5 @@
 
-label CaseCS1:
+label c1:
     bar "Getting the usual, yeah?"
 
     mc "Yes ma'am. You know how I like my bourbon."
@@ -85,5 +85,3 @@ label CaseCS1:
     bar "Hey!"
 
     "Before she can finish protesting, I exit the building and head back home."
-
-    jump CaseCS2

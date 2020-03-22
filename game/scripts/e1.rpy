@@ -1,4 +1,4 @@
-label CaseEScene1:
+label e1:
     "Whew, it's hot today."
 
     "A tidy white picket fence is almost glowing in the midday sun."
@@ -21,23 +21,23 @@ label CaseEScene1:
 
     mc "Pleased to make your acquaintance, ma'am. So I hear that you're having some trouble sleeping?"
 
-    m "You know, I'm not one for asking for much help, truth be told. But I heard that there was a doctor in the neighborhood who might be able to help me."  
+    m "You know, I'm not one for asking for much help, truth be told. But I heard that there was a doctor in the neighborhood who might be able to help me."
 
-    mc "Do you live here alone, Miranda?"   
+    mc "Do you live here alone, Miranda?"
 
     "Miranda looks down and heaves a sigh."
 
     m "'Fraid so, yes."
 
-    mc "Aside from your issues sleeping, how is life treating you?" 
+    mc "Aside from your issues sleeping, how is life treating you?"
 
-    m "My life's been pretty boring for a while now, but at my age that's a blessing. I like my movies, and love my classics. Simple pleasures for a simple gal."    
+    m "My life's been pretty boring for a while now, but at my age that's a blessing. I like my movies, and love my classics. Simple pleasures for a simple gal."
 
     m "It would be nice to sleep through the night, for a change, though."
 
     mc "Let's talk about your sleeping problems, then. Can you describe what's going on? Anything you've observed that might be affecting your quality of sleep?"
 
-    m "Well, I've taken to not sleeping straight through the night most nights. I keep having the same nightmare about a little girl, she's cryin', but I can't help her." 
+    m "Well, I've taken to not sleeping straight through the night most nights. I keep having the same nightmare about a little girl, she's cryin', but I can't help her."
 
     m "And I get these fits, and sometimes I knock over some'a my things."
 
@@ -47,9 +47,9 @@ label CaseEScene1:
 
     m "Well, at first when I woke up in the night I just felt… angry. I never really worried much about it in the past. But these days…"
 
-    "Miranda shakes her head and looks pensive." 
+    "Miranda shakes her head and looks pensive."
 
-    mc "It's gotten to where I just feel angry... all the time. I suppose that's why I finally called you, because I just don't know why."     
+    mc "It's gotten to where I just feel angry... all the time. I suppose that's why I finally called you, because I just don't know why."
 
     "I think I know where this is going."
 
@@ -72,5 +72,3 @@ label CaseEScene1:
     "Miranda tenses briefly, before relaxing and closing her eyes."
 
     "Time appears to speed up, and reality begins to slowly distort until it fades away, replaced with something else entirely"
-    jump CaseEScene2 
-
