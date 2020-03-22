@@ -85,3 +85,5 @@ label c1:
     bar "Hey!"
 
     "Before she can finish protesting, I exit the building and head back home."
+
+    jump choice

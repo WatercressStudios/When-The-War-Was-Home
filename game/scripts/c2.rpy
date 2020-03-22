@@ -436,3 +436,5 @@ label c2:
     mc "Talk to you tomorrow."
 
     son "Yeah.  Night, Imi."
+
+    jump choice

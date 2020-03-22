@@ -324,3 +324,4 @@ label d1:
 
     # fade to black, hiding the conversation
     # End scene
+    jump choice

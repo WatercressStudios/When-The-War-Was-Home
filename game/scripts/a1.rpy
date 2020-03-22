@@ -89,5 +89,4 @@ label a1:
     mc "Com’on, Ric. Doc doesn’t need formality"
     ric "Hehe, maybe so, but you at least deserve it."
 
-    #Dear Sagi, there should be a call or a notification for this case or case B.
-    #I am just letting you know that for now, I just made it all linear.
+    jump choice

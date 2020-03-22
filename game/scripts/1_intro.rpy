@@ -41,7 +41,9 @@ label intro:
     "Just gotta {b}pick a patient file{/b}, and then {b}pick a day{/b} on the calendar. How hard can it be?"
 
     # highlight the CALENDAR button
+    jump choice
 
+label intro2:
     # after the player schedules in a day, show the clinic again.
 
     son "Hey, I see you've scheduled it correctly. Nice job, Imi!"

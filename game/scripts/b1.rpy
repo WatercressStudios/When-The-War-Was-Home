@@ -91,3 +91,4 @@ label b1:
     "He reclines back in the operating chair, and I get to work."
 
     #Fade to black
+    jump choice

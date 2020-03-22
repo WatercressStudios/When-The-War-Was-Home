@@ -362,3 +362,5 @@ label c4:
     bar "I know, I know."
 
     "Eliza smiles with a chuckle, drinking down the last of her glass."
+
+    jump choice

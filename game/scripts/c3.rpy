@@ -195,3 +195,5 @@ label c3:
     "Aarul and I spend the rest of the night eating our food, winding down before the day concludes."
 
     "And before we know it… the next morning arrives."
+
+    jump c4

@@ -158,4 +158,4 @@ label main1:
     son "Night Ave. Bug you about work tomorrow!"
 
     ##Some sort of transition out of the scene, dunno what yet.
-    #jump 
+    jump choice

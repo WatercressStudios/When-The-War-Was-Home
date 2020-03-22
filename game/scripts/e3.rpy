@@ -81,3 +81,4 @@ label e3:
     "I may need help sleeping tonight, myself."
 
     mc "I think I need to take the rest of the day off."
+    jump choice

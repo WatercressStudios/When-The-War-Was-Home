@@ -80,3 +80,4 @@ label e2:
     m "First squad copies. En route."
 
     m "Let's move."
+    jump e3
