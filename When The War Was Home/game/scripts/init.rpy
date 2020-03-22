@@ -5,10 +5,17 @@ define mc = Character("Imani",  what_color="#f4d6a7")
 define m = Character("Miranda",  what_color="#A4FBFE")
 define ai = Character("Ai")
 define son = Character("Aarul")
-define fly = Character("Aarul")
+define fly = Character("Jason", who_color="#FF8000")
 define p1 = Character("Patient", who_color="#0000FF")
 define ric = Character("Richter", who_color="#FF0000")
 define rto = Character("Radio Telephone Operator")
+define pat = Character("Bar Patron", who_color="#FFFF00")
+define bar = Character("Barmaid", who_color="80FF00")
+define G1 = Character("Player 1", who_color="#ffffff")
+define G2 = Character("Player 2", who_color="#ffffff")
+define G3 = Character("Player 3", who_color="#ffffff")
+define G4 = Character("Player 4", who_color="#ffffff")
+define GF3 = Character("Player 5", who_color="#ffffff")
 
 
 ## The script of the game goes in this file.

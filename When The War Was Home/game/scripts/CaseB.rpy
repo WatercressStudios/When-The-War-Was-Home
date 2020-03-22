@@ -91,4 +91,4 @@ label CaseB:
     "He reclines back in the operating chair, and I get to work."
 
     #Fade to black
-    
+    jump CaseCS1
