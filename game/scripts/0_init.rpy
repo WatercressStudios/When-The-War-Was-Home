@@ -32,4 +32,5 @@ define Girl = Character("Little Girl", who_color="#6082b6", what_color="FADFAE")
 # rto: Radio Telephone Operator [Specific to Case E Scene 2]
 
 label start:
+    scene bg clinic
     jump intro
