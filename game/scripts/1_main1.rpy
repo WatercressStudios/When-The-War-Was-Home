@@ -4,12 +4,14 @@ label main1:
 ##Scene uses a placeholder name for the doctor - Dr. Avery, or 'Ave' as Aarul's nickname for them.  MC is nonbinary, terms mom/dad don't fit - will look into what Aarul calls them another time.  If the term changes, edit mentions of Ave/Avery accordingly!
 ##
 
+    scene street_day with fade 
+
     "I step off the train and walk out into the city, a short walk from home, barring how packed this part of the city usually is."
 
     "A grocery trip later, three bags in tow, the day sinking deeper and deeper into the blood-tinted sunset."
 
     "Rays of light cut deep into the street, as the eve of the afternoon transitions into twilight, the warmth upon my shoulders a respite from the cold, bitter air."
-
+    scene street_night with blinds
     "I take out some water from my bags, drinking it down as the city passes by."
 
     "Watching the laughter and the tears of the young and the old, as the scent of a burning flame thrashes into my face."
@@ -17,6 +19,8 @@ label main1:
     "Ashes and embers mixed with the ever-present chills, like a…"
 
     mc "A…"
+
+    scene street_night with hpunch
 
     mc "Achfhoo!"
 
@@ -26,14 +30,23 @@ label main1:
 
     "A few corners later, clambering downhill and cutting through an alleyway, I make my way to the door. Clicking the key into place, I turn the knob and walk inside."
 
+    scene clinic onlayer master:
+        subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0
+        parallel:
+            xpos 1.00
+            ease 10 xpos 0.01
+
     "The well-heated room bathes me with comfort, and I close the door behind me, setting the groceries down on the counter."
+
+    show son mc smile
 
     son "Ave!  Took ya long enough, didn't it?"
 
     "Aarul sits, playing with his phone on the couch, wearing a shit-eating grin."
+
     mc "The sun's barely set.  It isn't {i}that{/i}late, you know."
 
-    son "You've been gone since noon!  I'm hungry as hell.  A snack bar for lunch isn't very filling, you know."
+    son m shout "You've been gone since noon!  I'm hungry as hell.  A snack bar for lunch isn't very filling, you know."
 
     mc "It's your turn to make dinner, isn't it?"
 
@@ -43,7 +56,7 @@ label main1:
 
     son "You were gone all day yesterday!  I handled it for you then, you said you'd make it tonight!"
 
-    son "...We're low on ingredients anyway, not like I could make much if I tried."
+    son mc sad "...We're low on ingredients anyway, not like I could make much if I tried."
 
     "Sigh…"
 
