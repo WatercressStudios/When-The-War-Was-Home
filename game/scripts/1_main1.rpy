@@ -31,14 +31,13 @@ label main1:
     "A few corners later, clambering downhill and cutting through an alleyway, I make my way to the door. Clicking the key into place, I turn the knob and walk inside."
 
     scene clinic onlayer master:
-        subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0
+        subpixel True xpos 1.0 ypos 1.0 xanchor 1.0 yanchor 1.0
         parallel:
-            xpos 1.00
-            ease 10 xpos 0.01
+            xpos 1.0
 
     "The well-heated room bathes me with comfort, and I close the door behind me, setting the groceries down on the counter."
 
-    show son mc smile
+    show son mc smile with dissolve 
 
     son "Ave!  Took ya long enough, didn't it?"
 
@@ -62,13 +61,13 @@ label main1:
 
     mc "I've picked up a few snacks and some veggies from the store.  Why don't I teach you a few new tricks for tonight?"
 
-    son "You're still making up for this later."
+    son mc default "You're still making up for this later."
 
     mc "...If you say so, kiddo.  Any spices left?"
 
     ##EDITORS - can you get someone to flesh out this part of MC and Aarul cooking together?  I don't have the expertise to write this part of the scene well. Wolf note: cutting this for sake of time. It works as-is, anyways :D
 
-    son "Some cinnamon and some pepper, I guess…"
+    son m default "Some cinnamon and some pepper, I guess…"
 
     mc "Well, let's see what we're working with."
 
@@ -76,25 +75,25 @@ label main1:
 
     mc "Been up to anything, kiddo?"
 
-    son "Nothin' much."
+    son mc default "Nothin' much."
 
-    son "You know how it is, you're either stuck waiting for something to happen or life is rushing you down somehow."
+    son m default "You know how it is, you're either stuck waiting for something to happen or life is rushing you down somehow."
 
     mc "I've been there before."
 
     mc "But it's okay to take things slowly, right?  You're safe, there's no need to rush."
 
-    son "...I don't wanna be taking things slowly.  I wanna help with your work."
+    son mc sad "...I don't wanna be taking things slowly.  I wanna help with your work."
 
     mc "You're still young, aren't you?  There's plenty for you to do aside from following me around."
 
     mc "I'm thankful for the help, but it'd be better to have something of your own."
 
-    son "Not interested."
+    son mc default "Not interested."
 
     son "I don't wanna be stuck at home all day when I could be doing something to help people."
 
-    son "Stuff like what you do, Ave."
+    son m default "Stuff like what you do, Ave."
 
     mc "...You've still got a life to live, Aarul."
 
