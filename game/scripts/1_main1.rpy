@@ -30,14 +30,20 @@ label main1:
 
     "A few corners later, clambering downhill and cutting through an alleyway, I make my way to the door. Clicking the key into place, I turn the knob and walk inside."
 
-    scene clinic onlayer master:
-        subpixel True xpos 1.0 ypos 1.0 xanchor 1.0 yanchor 1.0
+    scene clinic onlayer master with dissolve:
+        subpixel True xpos 0.5 ypos 1.0 xanchor 0.35 yanchor 1.0 rotate None
         parallel:
-            xpos 1.0
+            xpos -0.22
+            ease 1.0 xpos 0.09
+        parallel:
+            zoom 1.48
+            ease 1.0 zoom 1.0
 
     "The well-heated room bathes me with comfort, and I close the door behind me, setting the groceries down on the counter."
 
-    show son mc smile with dissolve 
+    show son happy with dissolve:
+        xpos 0.4
+        zoom 2
 
     son "Ave!  Took ya long enough, didn't it?"
 
@@ -45,29 +51,29 @@ label main1:
 
     mc "The sun's barely set.  It isn't {i}that{/i}late, you know."
 
-    son m shout "You've been gone since noon!  I'm hungry as hell.  A snack bar for lunch isn't very filling, you know."
+    son shout "You've been gone since noon!  I'm hungry as hell.  A snack bar for lunch isn't very filling, you know."
 
     mc "It's your turn to make dinner, isn't it?"
 
-    son "Like hell!"
+    son groan "Like hell!"
 
     mc "The chart says so, Aarul."
 
-    son "You were gone all day yesterday!  I handled it for you then, you said you'd make it tonight!"
+    son shout "You were gone all day yesterday!  I handled it for you then, you said you'd make it tonight!"
 
-    son mc sad "...We're low on ingredients anyway, not like I could make much if I tried."
+    son sigh "...We're low on ingredients anyway, not like I could make much if I tried."
 
     "Sigh…"
 
     mc "I've picked up a few snacks and some veggies from the store.  Why don't I teach you a few new tricks for tonight?"
 
-    son mc default "You're still making up for this later."
+    son serious "You're still making up for this later."
 
     mc "...If you say so, kiddo.  Any spices left?"
 
     ##EDITORS - can you get someone to flesh out this part of MC and Aarul cooking together?  I don't have the expertise to write this part of the scene well. Wolf note: cutting this for sake of time. It works as-is, anyways :D
 
-    son m default "Some cinnamon and some pepper, I guess…"
+    son sigh "Some cinnamon and some pepper, I guess…"
 
     mc "Well, let's see what we're working with."
 
@@ -75,25 +81,25 @@ label main1:
 
     mc "Been up to anything, kiddo?"
 
-    son mc default "Nothin' much."
+    son sigh "Nothin' much."
 
-    son m default "You know how it is, you're either stuck waiting for something to happen or life is rushing you down somehow."
+    son serious "You know how it is, you're either stuck waiting for something to happen or life is rushing you down somehow."
 
     mc "I've been there before."
 
     mc "But it's okay to take things slowly, right?  You're safe, there's no need to rush."
 
-    son mc sad "...I don't wanna be taking things slowly.  I wanna help with your work."
+    son sad "...I don't wanna be taking things slowly.  I wanna help with your work."
 
     mc "You're still young, aren't you?  There's plenty for you to do aside from following me around."
 
     mc "I'm thankful for the help, but it'd be better to have something of your own."
 
-    son mc default "Not interested."
+    son sad "Not interested."
 
     son "I don't wanna be stuck at home all day when I could be doing something to help people."
 
-    son m default "Stuff like what you do, Ave."
+    son serious "Stuff like what you do, Ave."
 
     mc "...You've still got a life to live, Aarul."
 
@@ -103,11 +109,11 @@ label main1:
 
     son "Doesn't seem to work that way for me.  Not like I could bear some sorta big university deal like you did, if we could even afford it."
 
-    son "...And I'd rather at least do something than just sit around all day."
+    son sigh "...And I'd rather at least do something than just sit around all day."
 
-    son "Sure, I got my friends online, but the days go by and it's just…"
+    son sad "Sure, I got my friends online, but the days go by and it's just…"
 
-    son "It's not enough.  Without following you there ain't much else left."
+    son serious "It's not enough.  Without following you there ain't much else left."
 
     mc "...You sure that's what you want, Aarul?"
 
@@ -119,16 +125,16 @@ label main1:
 
     mc "I'd probably be happier if I chose differently in life."
 
-    son "You've told me before.  Fortunately for me, {i}I'm not you.{/i}"
+    son serious "You've told me before.  Fortunately for me, {i}I'm not you.{/i}"
     son "And besides, if it weren't for that, I wouldn't be here now."
 
-    son "As far as I'm concerned, you made the right choice.  I'm at least confident enough to believe in that."
+    son happy "As far as I'm concerned, you made the right choice.  I'm at least confident enough to believe in that."
 
     "Aarul's laughter echoes through the room, and I can't help but chuckle along a little as well."
 
     mc "It ain't an easy job, you know?  I've seen a lot of shit in my days."
 
-    son "If life is easy, you ain't livin' right."
+    son speaking "If life is easy, you ain't livin' right."
 
     mc "You gotta rest sometime. Otherwise, life just wears you down."
 
