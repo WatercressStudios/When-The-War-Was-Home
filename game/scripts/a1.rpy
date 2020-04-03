@@ -2,7 +2,7 @@
 label a1:
 
     #*ringing sfx*
-    #*click sfx*
+    #*click sfx
     mc "You've reached Dr. Ward, how may we help you today?"
     ric "Heeeeeeey, what's up Doc?"
     "Ahhh, no mistaking who's that now."
@@ -12,7 +12,7 @@ label a1:
     ric "Hahaha, ouch, real cold-blooded. Read my bluff without a second thought."
     ric "I need to buff some scrapes up, I got a new item to showcase this Friday and it just so happen it's the one set that I managed to ding up in a press conference."
     ric "The world demands perfection, y'know?"
-    "Aggh, here I thought {i}he's{\i} the one that's supposed to be blinded by his hubris."
+    "Aggh, here I thought {i}he's{/i} the one that's supposed to be blinded by his hubris."
     mc "Well, you've got good timing. I have an open slot, care to hop on over to the clinic and we'll knock this out today?"
     #*clap sfx*
     ric "Marvelous! Be there in a flash hon!"
@@ -29,7 +29,7 @@ label a1:
     "Richter is both famous and infamous around these parts, living up to his namesake:"
     "Much like the Richter scale, his ego gets exponentially worse."
     "He's a good kid, don't get me wrong, but he sure makes it hard for people to notice."
-    mc "It's... good... to see... {i}y-agh…{\i}"
+    mc "It's... good... to see... {i}y-agh…{/i}"
     #*pistons sfx*
     ric "Oh, oh god! My bad Doc, it's been nothing but androids around me this past week, kinda forgot to tone it down."
     # VA: heavy panting from nearly being crushed to death at the start of this line
