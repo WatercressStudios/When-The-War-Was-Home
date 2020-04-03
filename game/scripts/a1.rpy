@@ -3,6 +3,7 @@ label a1:
 
     #*ringing sfx*
     #*click sfx
+    show bg clinic with dissolve onlayer master:
     mc "You've reached Dr. Ward, how may we help you today?"
     ric "Heeeeeeey, what's up Doc?"
     "Ahhh, no mistaking who's that now."
