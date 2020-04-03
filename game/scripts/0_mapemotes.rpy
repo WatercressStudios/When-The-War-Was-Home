@@ -16,3 +16,5 @@ init python:
     MapEmote('son serious', 'son base mdo_default ed_default brow_default')
     MapEmote('son surprise', 'son base mdo_shout ed_default brow_sad')
     MapEmote('son speaking', 'son base mdo_shout ed_default brow_default')
+
+    #Rick

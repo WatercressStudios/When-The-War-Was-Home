@@ -43,13 +43,13 @@ label main1:
 
     show son happy with dissolve:
         xpos 0.4
-        zoom 2
+        zoom 1
 
     son "Ave!  Took ya long enough, didn't it?"
 
     "Aarul sits, playing with his phone on the couch, wearing a shit-eating grin."
 
-    mc "The sun's barely set.  It isn't {i}that{/i}late, you know."
+    mc "The sun's barely set.  It isn't {i}that{/i} late, you know."
 
     son shout "You've been gone since noon!  I'm hungry as hell.  A snack bar for lunch isn't very filling, you know."
 
