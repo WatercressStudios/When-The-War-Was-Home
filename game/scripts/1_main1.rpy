@@ -140,13 +140,13 @@ label main1:
 
     son "Looks like someone needs to take their own advice."
 
-    son "So, about the work?"
+    son neutral "So, about the work?"
 
     mc "...I'll think about taking you along more often. Just to get you out of the house more."
 
     mc "But if you're so antsy to get something done, I'll be throwing other work at you.  You need life experience you won't get from just being an assistant."
 
-    son "Nothing too outdoorsy, please.  The black shit could make me vomit from smell alone."
+    son groan "Nothing too outdoorsy, please.  The black shit could make me vomit from smell alone."
 
     mc "Don't I know it.  You get used to it, but it isn't pleasant."
 
@@ -154,26 +154,26 @@ label main1:
 
     mc "...I think I'm gonna read the news and head to bed.  When are you planning on dozing off for the night?"
 
-    son "I'll be up a while.  Got a friend out west who needs to vent when they get home."
+    son happy "I'll be up a while.  Got a friend out west who needs to vent when they get home."
 
-    son "Don't wanna leave 'em hanging, but if things are real bad we could go well past midnight.  I'll be glued to my phone whether or not I wanna go to bed."
+    son serious "Don't wanna leave 'em hanging, but if things are real bad we could go well past midnight.  I'll be glued to my phone whether or not I wanna go to bed."
 
     mc "Well, keep an eye on your health, alright?"
 
-    son "I will, I will.  If anything, I'm worried about you more than me."
+    son neutral "I will, I will.  If anything, I'm worried about you more than me."
 
     "Aarul gets up from his chair and picks up his phone, scrolling through as an anxious look comes on his face."
 
-    son "...Crap, that's more than I was expecting."
+    son surprise "...Crap, that's more than I was expecting."
 
     mc "Long night?"
 
-    son "Definitely.  Always on the clock when you live online."
+    son serious "Definitely.  Always on the clock when you live online."
 
     mc "Well, just take care of yourself.  Night, Aarul."
 
 
-    son "Night Ave. Bug you about work tomorrow!"
+    son happy "Night Ave. Bug you about work tomorrow!"
 
     ##Some sort of transition out of the scene, dunno what yet.
     jump choice
