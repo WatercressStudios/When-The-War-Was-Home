@@ -3,6 +3,10 @@ label b1:
     #Wolf's Territory
     #Scene 1: "Save 'Em, Too."
 
+    show bg clinic with Dissolve(0.2)
+    show drone at right with dissolve:
+        xpos 3
+
     mc "You know, a body swap procedure like this is a pretty rare one. Normally I only do it for the severely injured, but-"
 
     fly "C'mon, man..."
@@ -90,5 +94,6 @@ label b1:
 
     "He reclines back in the operating chair, and I get to work."
 
-    #Fade to black
+    hide drone at right with dissolve
+    hide bg clinc with fade
     jump choice
