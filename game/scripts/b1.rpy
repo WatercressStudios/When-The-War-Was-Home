@@ -4,7 +4,7 @@ label b1:
     #Scene 1: "Save 'Em, Too."
 
 
-    show bg clinic with Dissolve(2.0)
+    scene clinic with Dissolve(2.0)
     show drone at right with dissolve:
         
     mc "You know, a body swap procedure like this is a pretty rare one. Normally I only do it for the severely injured, but-"
