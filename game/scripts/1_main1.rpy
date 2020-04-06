@@ -3,15 +3,16 @@ label main1:
 ##NOTE FOR EDITORS
 ##Scene uses a placeholder name for the doctor - Dr. Avery, or 'Ave' as Aarul's nickname for them.  MC is nonbinary, terms mom/dad don't fit - will look into what Aarul calls them another time.  If the term changes, edit mentions of Ave/Avery accordingly!
 ##
+    define circlewipe = ImageDissolve("imagedissolve circlewipe.png", 1.0, 8)
 
-    scene street_day with fade 
+    scene bg street_day with dissolve
 
     "I step off the train and walk out into the city, a short walk from home, barring how packed this part of the city usually is."
 
     "A grocery trip later, three bags in tow, the day sinking deeper and deeper into the blood-tinted sunset."
 
     "Rays of light cut deep into the street, as the eve of the afternoon transitions into twilight, the warmth upon my shoulders a respite from the cold, bitter air."
-    scene street_night with blinds
+    scene bg street_night with blinds
     "I take out some water from my bags, drinking it down as the city passes by."
 
     "Watching the laughter and the tears of the young and the old, as the scent of a burning flame thrashes into my face."
@@ -20,7 +21,7 @@ label main1:
 
     mc "A…"
 
-    scene street_night with hpunch
+    scene bg street_night with hpunch
 
     mc "Achfhoo!"
 
@@ -30,10 +31,10 @@ label main1:
 
     "A few corners later, clambering downhill and cutting through an alleyway, I make my way to the door. Clicking the key into place, I turn the knob and walk inside."
 
-    hide street_night with irisout
+    hide bg street_night with circlewipe
 
-    scene clinic onlayer master with dissolve:
-        subpixel True xpos 0.5 ypos 1.0 xanchor 0.40 yanchor 1.0 rotate None 
+    scene bg clinic onlayer master with circlewipe:
+        subpixel True xpos 0.5 ypos 1.0 xanchor 0.30 yanchor 1.0 rotate None 
         parallel:
             xpos -0.22
             zoom 1.0 xpos 0.09
