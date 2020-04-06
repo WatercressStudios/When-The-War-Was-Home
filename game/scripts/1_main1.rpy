@@ -30,14 +30,16 @@ label main1:
 
     "A few corners later, clambering downhill and cutting through an alleyway, I make my way to the door. Clicking the key into place, I turn the knob and walk inside."
 
+    hide street_night with irisout
+
     scene clinic onlayer master with dissolve:
-        subpixel True xpos 0.5 ypos 1.0 xanchor 0.35 yanchor 1.0 rotate None 
+        subpixel True xpos 0.5 ypos 1.0 xanchor 0.40 yanchor 1.0 rotate None 
         parallel:
             xpos -0.22
-            ease 1.0 xpos 0.09
+            zoom 1.0 xpos 0.09
         parallel:
-            zoom 2.50
-            ease 1.0 zoom 1.0
+            zoom 1.48
+            ease 1.0 zoom 1
 
 
     "The well-heated room bathes me with comfort, and I close the door behind me, setting the groceries down on the counter."
