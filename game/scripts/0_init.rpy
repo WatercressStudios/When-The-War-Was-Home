@@ -21,6 +21,8 @@ define fri = Character("Charlotte", callback=speaker("fri"), who_color="#D2691E"
 define Girl = Character("Little Girl", who_color="#6082b6", what_color="FADFAE")
 
 
+#transitions
+define circlewipe = ImageDissolve("imagedissolve_circlewipe.png", 1.0, 8)
 
 ## The script of the game goes in this file.
 

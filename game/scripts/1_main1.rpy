@@ -3,7 +3,6 @@ label main1:
 ##NOTE FOR EDITORS
 ##Scene uses a placeholder name for the doctor - Dr. Avery, or 'Ave' as Aarul's nickname for them.  MC is nonbinary, terms mom/dad don't fit - will look into what Aarul calls them another time.  If the term changes, edit mentions of Ave/Avery accordingly!
 ##
-    define circlewipe = ImageDissolve("imagedissolve circlewipe.png", 1.0, 8)
 
     scene bg street_day with dissolve
 
