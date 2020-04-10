@@ -3,6 +3,13 @@ label b1:
     #Wolf's Territory
     #Scene 1: "Save 'Em, Too."
 
+
+    scene bg clinic with Dissolve(2.0)
+
+    show fly at right with dissolve
+        xpos 0.5
+        ypos 0.5
+        
     mc "You know, a body swap procedure like this is a pretty rare one. Normally I only do it for the severely injured, but-"
 
     fly "C'mon, man..."
@@ -18,6 +25,13 @@ label b1:
     fly "They haven't done nothin' ta deserve my attention anyways."
 
     mc "Then what is the {i}real{/i} reason, then? I can't go through with this in good faith without knowing what's up."
+
+    show fly at right: 
+        linear 0.090 xoffset -10
+        linear 0.090 xoffset +0
+        linear 0.090 yoffset -10
+        linear 0.090 yoffset +0
+        repeat
 
     fly "I..."
     "I look him right in the eye, crossing my arms. He cracks under the pressure."
@@ -90,5 +104,6 @@ label b1:
 
     "He reclines back in the operating chair, and I get to work."
 
-    #Fade to black
+    hide fly at right with dissolve
+    hide bg clinc with fade
     jump choice
