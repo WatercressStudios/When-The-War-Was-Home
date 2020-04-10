@@ -1,6 +1,6 @@
 # How to get your branch merged aka pull request
 
-Remember, to name your branch as follows:
+Remember to name your branch as follows:
 `Department/YourName/Feature`
 
 For example,
