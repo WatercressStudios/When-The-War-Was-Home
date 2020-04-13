@@ -1,8 +1,11 @@
 # BG clinic
 # sfx of phone ringing
 # sfx phone being picked up
-
+#music carries on from main menu
 label intro:
+    play sound "sfx/phone ring.ogg"
+    pause 3.5
+    play sound "sfx/pick up.ogg"
     mc "Imani speaking."
 
     p1 "Good afternoon. Is this a clinic?"
@@ -16,6 +19,7 @@ label intro:
     p1 "No, I have it. Bless you."
 
     # sfx of phone hanging up
+    play sound "sfx/hang up.ogg"
     "Well, there goes my relaxing summer afternoon."
 
     "It's been a little quiet this weekend, which is a good thing. It means no one needed medical help."
@@ -23,6 +27,7 @@ label intro:
     "Aarul, my son, could probably spend his summer days doing summer-y things with teenagers his age, too."
 
     # sfx of a new notification
+    play sound "sfx/notification.ogg"
     son "I see the patient's email, Imi. I'm entering his details into the new app now."
 
     son "Do you need me to show you how to use it again?"
@@ -39,6 +44,8 @@ label intro:
     "Aarul's gone ahead and marked the days I'm available."
 
     "Just gotta {b}pick a patient file{/b}, and then {b}pick a day{/b} on the calendar. How hard can it be?"
+
+    stop music fadeout 2.0
 
     # highlight the CALENDAR button
     jump choice
@@ -60,8 +67,10 @@ label intro2:
 
     "I grab my tools bag and walk out the front door."
 
+
 # BG black snow sky
 # SFX of a cold breeze
+    play env "sfx/wind.ogg" fadein 1.0
 
     "Brrr. Looks like it's snowing, just like the forecast said it would."
 
@@ -74,6 +83,7 @@ label intro2:
     "Well, this is the house."
 
 # SFX of doorbell being pushed
+    play sound "sfx/doorbell.ogg"
     "I ring the doorbell while reviewing the patient case notes on my tablet once more."
 
     "Discomfort in the joints, starting from two weeks ago. Coincidentally, it was also snowing heavily that day."
@@ -81,7 +91,7 @@ label intro2:
     "This should be a straightforward case."
 
 # SFX of door opening
-
+    play sound "sfx/door open.ogg"
 # sprite of a robot (use a variation or one of the unused/thrown away concepts? no need for emotes or anything)
 
     p1 "Yes?"
@@ -89,7 +99,7 @@ label intro2:
     "I smile at my patient. I can tell right away he's a war veteran, too."
 
     mc "I'm Doctor Ward. We spoke on the phone earlier today."
-
+    stop env fadeout 2.0
     p1 "Oh! You're just on time. Bless you, doctor. My joints really are killing me,"
 
     "The discoloration around the patient's limbs confirms my initial diagnosis."

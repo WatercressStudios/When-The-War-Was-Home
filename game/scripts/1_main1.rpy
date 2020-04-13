@@ -5,7 +5,7 @@ label main1:
 ##
 
     scene bg street_day with dissolve
-
+    play music "music/Empty.ogg" fadein 2.0
     "I step off the train and walk out into the city, a short walk from home, barring how packed this part of the city usually is."
 
     "A grocery trip later, three bags in tow, the day sinking deeper and deeper into the blood-tinted sunset."
@@ -30,10 +30,10 @@ label main1:
 
     "A few corners later, clambering downhill and cutting through an alleyway, I make my way to the door. Clicking the key into place, I turn the knob and walk inside."
 
-    hide bg street_night with circlewipe
+    scene black with dissolve
 
-    scene bg clinic onlayer master with circlewipe:
-        subpixel True xpos 0.5 ypos 1.0 xanchor 0.30 yanchor 1.0 rotate None 
+    scene bg clinic onlayer master with dissolve:
+        subpixel True xpos 0.5 ypos 1.0 xanchor 0.30 yanchor 1.0 rotate None
         parallel:
             xpos -0.22
             zoom 1.0 xpos 0.09
@@ -54,23 +54,23 @@ label main1:
 
     mc "The sun's barely set.  It isn't {i}that{/i} late, you know."
 
-    show son shout 
-    
+    show son shout
+
     son "You've been gone since noon!  I'm hungry as hell.  A snack bar for lunch isn't very filling, you know."
 
     mc "It's your turn to make dinner, isn't it?"
 
-    show son groan 
+    show son groan
 
     son "Like hell!"
 
     mc "The chart says so, Aarul."
 
-    show son shout 
+    show son shout
 
     son "You were gone all day yesterday!  I handled it for you then, you said you'd make it tonight!"
 
-    show son sigh 
+    show son sigh
 
     son "...We're low on ingredients anyway, not like I could make much if I tried."
 
@@ -78,7 +78,7 @@ label main1:
 
     mc "I've picked up a few snacks and some veggies from the store.  Why don't I teach you a few new tricks for tonight?"
 
-    show son serious 
+    show son serious
 
     son "You're still making up for this later."
 
@@ -86,7 +86,7 @@ label main1:
 
     ##EDITORS - can you get someone to flesh out this part of MC and Aarul cooking together?  I don't have the expertise to write this part of the scene well. Wolf note: cutting this for sake of time. It works as-is, anyways :D
 
-    show son sigh 
+    show son sigh
 
     son "Some cinnamon and some pepper, I guess…"
 
@@ -96,11 +96,11 @@ label main1:
 
     mc "Been up to anything, kiddo?"
 
-    show son sigh 
+    show son sigh
 
     son "Nothin' much."
 
-    show son serious 
+    show son serious
 
     son "You know how it is, you're either stuck waiting for something to happen or life is rushing you down somehow."
 
@@ -108,7 +108,7 @@ label main1:
 
     mc "But it's okay to take things slowly, right?  You're safe, there's no need to rush."
 
-    show son sad 
+    show son sad
 
     son "...I don't wanna be taking things slowly.  I wanna help with your work."
 
@@ -116,13 +116,13 @@ label main1:
 
     mc "I'm thankful for the help, but it'd be better to have something of your own."
 
-    show son sad 
+    show son sad
 
     son "Not interested."
 
     son "I don't wanna be stuck at home all day when I could be doing something to help people."
 
-    show son serious 
+    show son serious
 
     son "Stuff like what you do, Ave."
 
@@ -134,15 +134,15 @@ label main1:
 
     son "Doesn't seem to work that way for me.  Not like I could bear some sorta big university deal like you did, if we could even afford it."
 
-    show son sigh 
+    show son sigh
 
     son "...And I'd rather at least do something than just sit around all day."
 
-    show son sad 
+    show son sad
 
     son "Sure, I got my friends online, but the days go by and it's just…"
 
-    show son serious 
+    show son serious
 
     son "It's not enough.  Without following you there ain't much else left."
 
@@ -156,12 +156,12 @@ label main1:
 
     mc "I'd probably be happier if I chose differently in life."
 
-    show son serious 
+    show son serious
 
     son "You've told me before.  Fortunately for me, {i}I'm not you.{/i}"
     son "And besides, if it weren't for that, I wouldn't be here now."
 
-    show son happy 
+    show son happy
 
     son "As far as I'm concerned, you made the right choice.  I'm at least confident enough to believe in that."
 
@@ -169,7 +169,7 @@ label main1:
 
     mc "It ain't an easy job, you know?  I've seen a lot of shit in my days."
 
-    show son speaking 
+    show son speaking
 
     son "If life is easy, you ain't livin' right."
 
@@ -177,7 +177,7 @@ label main1:
 
     son "Looks like someone needs to take their own advice."
 
-    show son neutral 
+    show son neutral
 
     son "So, about the work?"
 
@@ -185,7 +185,7 @@ label main1:
 
     mc "But if you're so antsy to get something done, I'll be throwing other work at you.  You need life experience you won't get from just being an assistant."
 
-    show son groan 
+    show son groan
 
     son "Nothing too outdoorsy, please.  The black shit could make me vomit from smell alone."
 
@@ -195,40 +195,40 @@ label main1:
 
     mc "...I think I'm gonna read the news and head to bed.  When are you planning on dozing off for the night?"
 
-    show son happy 
+    show son happy
 
     son "I'll be up a while.  Got a friend out west who needs to vent when they get home."
 
-    show son serious 
+    show son serious
 
     son "Don't wanna leave 'em hanging, but if things are real bad we could go well past midnight.  I'll be glued to my phone whether or not I wanna go to bed."
 
     mc "Well, keep an eye on your health, alright?"
 
-    show son neutral 
+    show son neutral
 
     son "I will, I will.  If anything, I'm worried about you more than me."
 
     "Aarul gets up from his chair and picks up his phone, scrolling through as an anxious look comes on his face."
 
-    show son surprise 
+    show son surprise
 
     son "...Crap, that's more than I was expecting."
 
     mc "Long night?"
 
-    show son serious 
+    show son serious
 
     son "Definitely.  Always on the clock when you live online."
 
     mc "Well, just take care of yourself.  Night, Aarul."
 
-
-    show son happy 
+    stop music fadeout 2.0
+    show son happy
 
     son "Night Ave. Bug you about work tomorrow!"
 
-    hide bg clinic with fade
+    scene black with dissolve
 
     ##Some sort of transition out of the scene, dunno what yet.
     jump choice
