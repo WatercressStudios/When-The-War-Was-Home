@@ -1,50 +1,54 @@
 
 label a1:
 
-    #*ringing sfx*
-    play sound "sfx/phone ring.ogg"
-    pause 3.5
-    play sound "sfx/pick up.ogg"
-    scene clinic onlayer master with dissolve:
-        subpixel True xpos 0.5 ypos 1.0 xanchor 0.35 yanchor 1.0 rotate None
-        parallel:
-            xpos -0.22
-            ease 1.0 xpos 0.09
-        parallel:
-            zoom 1.48
-            ease 1.0 zoom 1.0
-    mc "You've reached Dr. Ward, how may we help you today?"
-    show ric smile with dissolve:
-        zoom 1
-    ric "Heeeeeeey, what's up Doc?"
-    "Ahhh, no mistaking who's that now."
-    mc "How's it going Ric, finally caught some time home from the last tour?"
-    show ric surprised
-    ric "Is it on the news already or you're too cynical to consider I'm calling just to check on a friend?"
-    mc "I assume both are true, but I skim the entertainment section."
-    show ric pleased
-    ric "Hahaha, ouch, real cold-blooded. Read my bluff without a second thought."
-    ric "I need to buff some scrapes up, I got a new item to showcase this Friday and it just so happen it's the one set that I managed to ding up in a press conference."
-    ric "The world demands perfection, y'know?"
-    "Aggh, here I thought {i}he's{/i} the one that's supposed to be blinded by his hubris."
-    mc "Well, you've got good timing. I have an open slot, care to hop on over to the clinic and we'll knock this out today?"
-    #*clap sfx*
-    show ric smile
-    ric "Marvelous! Be there in a flash hon!"
-    #*click sfx*
-    play sound "sfx/hang up.ogg"
-    "Welp, that's today settled for. It's gonna take a while to reach his standards, but I shouldn't complain. An easy job and good pay."
-    "Now, where'd did I leave the sander? Still gotta be around here from his last visit"
+    # #*ringing sfx*
+    # play sound "sfx/phone ring.ogg"
+    # pause 3.5
+    # play sound "sfx/pick up.ogg"
+    # scene clinic onlayer master with dissolve:
+    #     subpixel True xpos 0.5 ypos 1.0 xanchor 0.35 yanchor 1.0 rotate None
+    #     parallel:
+    #         xpos -0.22
+    #         ease 1.0 xpos 0.09
+    #     parallel:
+    #         zoom 1.48
+    #         ease 1.0 zoom 1.0
+    # mc "You've reached Dr. Ward, how may we help you today?"
+    #
+    # ric "Heeeeeeey, what's up Doc?"
+    # "Ahhh, no mistaking who's that now."
+    # mc "How's it going Ric, finally caught some time home from the last tour?"
+    #
+    # ric "Is it on the news already or you're too cynical to consider I'm calling just to check on a friend?"
+    # mc "I assume both are true, but I skim the entertainment section."
+    #
+    # ric "Hahaha, ouch, real cold-blooded. Read my bluff without a second thought."
+    # ric "I need to buff some scrapes up, I got a new item to showcase this Friday and it just so happen it's the one set that I managed to ding up in a press conference."
+    # ric "The world demands perfection, y'know?"
+    # "Aggh, here I thought {i}he's{/i} the one that's supposed to be blinded by his hubris."
+    # mc "Well, you've got good timing. I have an open slot, care to hop on over to the clinic and we'll knock this out today?"
+    # #*clap sfx*
+    # show ric smile
+    # ric "Marvelous! Be there in a flash hon!"
+    # #*click sfx*
+    # play sound "sfx/hang up.ogg"
+    # "Welp, that's today settled for. It's gonna take a while to reach his standards, but I shouldn't complain. An easy job and good pay."
+    scene bg clinic with dissolve:
+        xalign 0.0
+    "Now, where'd did I leave the sander? Still gotta be around here from his last visit."
     #*rummaging folly sfx*
     play sound "sfx/rumage.ogg"
-    pause 3.0
+    pause 2.0
     play sound "sfx/doorbell.ogg"
     #*doorbell sfx*
+    show bg clinic:
+        ease 1.0 xalign 0.9
     "Right on cue."
     #show ric
     play music "music/richter.ogg" fadein 1.0
-    show ric shout
-    ric "Dooooooc! It's been too long! Come here!"
+    show ric shout with dissolve:
+        xalign 0.6
+    ric "Dooooooc! It's been too long! Come here!" with hpunch
     #*grip sfx*
     play sound "sfx/hug.ogg"
     "Before I can react, he locks me in a powerful hug. The kind that probably isn't safe for my non-metallic skeleton."
@@ -83,6 +87,8 @@ label a1:
     play sound "sfx/cape.ogg"
     stop music fadeout 3.0
     hide ric sad with dissolve
+    show bg clinic:
+        ease 1.5 xalign 0.0
     "He sits down on the examination table, fidgeting.  With a click, he unlocks his cape and I set it aside."
     "I take a screwdriver and remove the screws on the upper arm one by one, loosening up the exo-armor."
     "I gently pry it open to protect the wiring, and take off the front piece and reveal the skeleton beneath."
@@ -90,7 +96,8 @@ label a1:
     "It’s way worse than I anticipated. The scrapes and indentations are numerous, not to mention the large scarring deep in the ball joint."
     play music "music/scars.ogg" fadein 2.0
     "I touch the surface around the scar and notice a rough grainy texture. Rust? No, it's not scraping off. It’s seared."
-    show ric dm frown with dissolve
+    show ric dm frown with dissolve:
+        xalign 0.5
     ric "Mmm-well? Do you see what’s wrong?"
     mc "Clearly, yeah. You should have told me sooner. Honestly it's a surprise it's only starting to act up."
     ric"Yeah, recently... yeah..."
@@ -120,11 +127,11 @@ label a1:
     "I stand up and wedge the screwdriver between ball joint and its socket"
     mc "It's jutting a bit too much to move in your current exo, so I’ll have to sand off a millimeter or two off it to allow the joint to move freely after lubrication."
     mc "It does mean you’ll have to custom shape your other upper arm guards, but I guess a designer like you can work with it."
+    show ric dm neutral
     "Richter looks at me, smiling, and hugs me gently."
-    show ric neutral
     ric "Thank you, Doctor."
     mc "Com’on, Ric. Doc doesn’t need formality"
-    show ric pleased
+    show ric dm pleased
     ric "Hehe, maybe so, but you at least deserve it."
     stop music fadeout 2.0
     scene black with dissolve

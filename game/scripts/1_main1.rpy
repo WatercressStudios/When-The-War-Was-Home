@@ -4,14 +4,18 @@ label main1:
 ##Scene uses a placeholder name for the doctor - Dr. Avery, or 'Ave' as Aarul's nickname for them.  MC is nonbinary, terms mom/dad don't fit - will look into what Aarul calls them another time.  If the term changes, edit mentions of Ave/Avery accordingly!
 ##
 
-    scene bg street_day with dissolve
+    scene bg street_day with dissolve:
+        zoom 1.5 align (0.0, 1.0)
+        linear 60 align (1.0, 1.0)
     play music "music/Empty.ogg" fadein 2.0
     "I step off the train and walk out into the city, a short walk from home, barring how packed this part of the city usually is."
 
     "A grocery trip later, three bags in tow, the day sinking deeper and deeper into the blood-tinted sunset."
 
+    show bg street_night with dissolve:
+        linear 60 align (1.0, 1.0)
     "Rays of light cut deep into the street, as the eve of the afternoon transitions into twilight, the warmth upon my shoulders a respite from the cold, bitter air."
-    scene bg street_night with blinds
+
     "I take out some water from my bags, drinking it down as the city passes by."
 
     "Watching the laughter and the tears of the young and the old, as the scent of a burning flame thrashes into my face."
@@ -20,9 +24,7 @@ label main1:
 
     mc "A…"
 
-    scene bg street_night with hpunch
-
-    mc "Achfhoo!"
+    mc "Achfhoo!" with hpunch
 
     "Snot dribbles down my nose."
 
@@ -33,28 +35,27 @@ label main1:
     scene black with dissolve
 
     scene bg clinic onlayer master with dissolve:
-        subpixel True xpos 0.5 ypos 1.0 xanchor 0.30 yanchor 1.0 rotate None
-        parallel:
-            xpos -0.22
-            zoom 1.0 xpos 0.09
-        parallel:
-            zoom 1.48
-            ease 1.0 zoom 1
-
+        align (0.72, 0.5) zoom 1.5
+        ease 2.0 zoom 1
 
     "The well-heated room bathes me with comfort, and I close the door behind me, setting the groceries down on the counter."
 
     show son happy with dissolve:
-        xpos 0.4
+        xalign 0.5
         zoom 1
 
-    son "Ave!  Took ya long enough, didn't it?"
+    son "Imi! Took ya long enough, didn't it?"
+
+    hide son with dissolve
+    show bg clinic:
+        ease 2.0 zoom 1.3 xalign 1.0
 
     "Aarul sits, playing with his phone on the couch, wearing a shit-eating grin."
 
     mc "The sun's barely set.  It isn't {i}that{/i} late, you know."
 
-    show son shout
+    show son shout with dissolve:
+        xalign 0.9
 
     son "You've been gone since noon!  I'm hungry as hell.  A snack bar for lunch isn't very filling, you know."
 
@@ -62,7 +63,7 @@ label main1:
 
     show son groan
 
-    son "Like hell!"
+    son "Like hell!" with hpunch
 
     mc "The chart says so, Aarul."
 
@@ -92,11 +93,16 @@ label main1:
 
     mc "Well, let's see what we're working with."
 
+    hide son with dissolve
+    show bg clinic:
+        ease 2.0 align (0.74, 1.0) zoom 1.75
+
     "I start pulling the food out of the bag, ruffling around in the fridge until we find cobble something together, with a handful of fruits laid out alongside on the table."
 
     mc "Been up to anything, kiddo?"
 
-    show son sigh
+    show son sigh with dissolve:
+        xalign 0.0 zoom 1.2
 
     son "Nothin' much."
 
@@ -124,7 +130,7 @@ label main1:
 
     show son serious
 
-    son "Stuff like what you do, Ave."
+    son "Stuff like what you do, Imi."
 
     mc "...You've still got a life to live, Aarul."
 
@@ -191,11 +197,16 @@ label main1:
 
     mc "Don't I know it.  You get used to it, but it isn't pleasant."
 
+    hide son with dissolve
+
+    show bg clinic:
+        ease 2.0 zoom 1.0
     "I get up from the chair and stretch my arms, having finished most of my food."
 
     mc "...I think I'm gonna read the news and head to bed.  When are you planning on dozing off for the night?"
 
-    show son happy
+    show son happy with dissolve:
+        align (0.45, 1.0) zoom 0.7 yoffset 250
 
     son "I'll be up a while.  Got a friend out west who needs to vent when they get home."
 
@@ -209,9 +220,13 @@ label main1:
 
     son "I will, I will.  If anything, I'm worried about you more than me."
 
+    hide son with dissolve
+    show bg clinic:
+        ease 3.0 xalign 0.0
     "Aarul gets up from his chair and picks up his phone, scrolling through as an anxious look comes on his face."
 
-    show son surprise
+    show son surprise:
+        align (0.6, 1.0) zoom 0.7 yoffset 250
 
     son "...Crap, that's more than I was expecting."
 
@@ -226,7 +241,7 @@ label main1:
     stop music fadeout 2.0
     show son happy
 
-    son "Night Ave. Bug you about work tomorrow!"
+    son "Night Imi. Bug you about work tomorrow!"
 
     scene black with dissolve
 

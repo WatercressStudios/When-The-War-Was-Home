@@ -6,9 +6,12 @@ label b1:
 
     scene bg clinic with Dissolve(2.0)
     play music "music/Other Side.ogg" fadein 2.0
-    show fly at right with dissolve:
-        xpos 0.5
-        ypos 0.5
+    show fly:
+        align (0.5, 0.5)
+        block:
+            ease 1.5 yoffset -20
+            ease 1.5 yoffset +20
+            repeat
 
     mc "You know, a body swap procedure like this is a pretty rare one. Normally I only do it for the severely injured, but-"
 
@@ -25,13 +28,6 @@ label b1:
     fly "They haven't done nothin' ta deserve my attention anyways."
 
     mc "Then what is the {i}real{/i} reason, then? I can't go through with this in good faith without knowing what's up."
-
-    show fly at right:
-        linear 0.090 xoffset -10
-        linear 0.090 xoffset +0
-        linear 0.090 yoffset -10
-        linear 0.090 yoffset +0
-        repeat
 
     fly "I..."
     "I look him right in the eye, crossing my arms. He cracks under the pressure."
@@ -101,6 +97,10 @@ label b1:
     mc "I-Uh, sure. I believe you."
 
     fly "Alrighty, let's get this shit going, doc, we don't have all day!"
+
+    hide fly with dissolve
+    show bg clinic:
+        ease 2.0 xalign 0.0
 
     "He reclines back in the operating chair, and I get to work."
 

@@ -15,6 +15,7 @@ init python:
         'd1': 'Case D1',
         'd2': 'Case D2',
         'e1': 'Case E',
+        'main2': 'Main 2',
         'main3': 'Main 3',
         'main4': 'Main 4',
         'main5': 'Main 5',
@@ -26,6 +27,9 @@ init python:
     all_choices_act1 = [
         'a1',
         'b1',
+    ]
+    all_choices_postact1 = [
+        'main2',
     ]
     all_choices_act2 = [
         'c1',
@@ -74,9 +78,7 @@ label choice:
     elif len(calls_done) < 3: # intro + ACT 1
         $ update_calls_variables(all_choices_act1)
     elif len(calls_done) == 3: # intro + ACT 1
-        $ calls_done.append('main2')
-        # jump credits
-        jump main2
+        $ update_calls_variables(all_choices_postact1)
     elif len(calls_done) < 13: # intro + ACT 1 + main2 + ACT 2
         $ update_calls_variables(all_choices_act2)
     elif len(calls_done) == 13: # intro + ACT 1 + main2 + ACT 2

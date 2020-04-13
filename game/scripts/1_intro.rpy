@@ -3,12 +3,18 @@
 # sfx phone being picked up
 #music carries on from main menu
 label intro:
+    scene bg clinic with dissolve:
+        zoom 2.0 align (0.0, 0.5)
+        ease 3.5 zoom 1.3
     play sound "sfx/phone ring.ogg"
     pause 3.5
     play sound "sfx/pick up.ogg"
     mc "Imani speaking."
 
     p1 "Good afternoon. Is this a clinic?"
+
+    show bg clinic:
+        linear 60.0 align (1.0, 0.5)
 
     mc "Yes. I'm Doctor Ward, the owner. Are you calling to make an appointment?"
 
@@ -24,12 +30,19 @@ label intro:
 
     "It's been a little quiet this weekend, which is a good thing. It means no one needed medical help."
 
+    show bg clinic:
+        ease 1.0 align (0.8, 0.5)
+    pause 1.0
+    show son neutral with dissolve:
+        xalign 0.5
+
     "Aarul, my son, could probably spend his summer days doing summer-y things with teenagers his age, too."
 
     # sfx of a new notification
     play sound "sfx/notification.ogg"
     son "I see the patient's email, Imi. I'm entering his details into the new app now."
 
+    show son happy
     son "Do you need me to show you how to use it again?"
 
     mc "No need, no need, I got this. Sheesh, how different can it be from the previous app?"
@@ -53,24 +66,35 @@ label intro:
 label intro2:
     # after the player schedules in a day, show the clinic again.
 
+    show son happy2
     son "Hey, I see you've scheduled it correctly. Nice job, Imi!"
 
     mc "Savor this while you can, Aarul. It won't be long till I'm better at this app than you, too."
 
-    son "It's not my fault the last app was a disaster - oh, forget it. From now on, I'll add any new house call requests through this app. So keep an eye on it, okay?"
+    show son surprised with hpunch
+    son "It's not my fault the last app was a disaster!"
+
+    show son sigh
+    son "Oh, forget it."
+
+    show son happy
+    son "From now on, I'll add any new house call requests through this app. So keep an eye on it, okay?"
 
     mc "Got it."
 
+    hide son with dissolve
     "Looking up the address, it looks like the patient's home is just a few blocks away."
 
     "Perfect distance for a summer day."
 
+    show bg clinic:
+        ease 3.0 zoom 2.0 xalign 0.72
     "I grab my tools bag and walk out the front door."
-
 
 # BG black snow sky
 # SFX of a cold breeze
     play env "sfx/wind.ogg" fadein 1.0
+    scene bg_sky night darksnow
 
     "Brrr. Looks like it's snowing, just like the forecast said it would."
 
@@ -79,7 +103,7 @@ label intro2:
     "Don't wanna end up bald."
 
 # BG: front door of a house (I think I'm just gonna zoom into Case E's dark BG, flip it, and hope no one notices.)
-
+    scene bg introhouse with dissolve
     "Well, this is the house."
 
 # SFX of doorbell being pushed
@@ -94,6 +118,8 @@ label intro2:
     play sound "sfx/door open.ogg"
 # sprite of a robot (use a variation or one of the unused/thrown away concepts? no need for emotes or anything)
 
+    show p1 with dissolve:
+        xalign 0.5
     p1 "Yes?"
 
     "I smile at my patient. I can tell right away he's a war veteran, too."
