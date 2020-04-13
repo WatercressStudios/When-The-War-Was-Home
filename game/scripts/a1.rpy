@@ -5,14 +5,14 @@ label a1:
     play sound "sfx/phone ring.ogg"
     pause 3.5
     play sound "sfx/pick up.ogg"
-   scene clinic onlayer master with dissolve:
-    subpixel True xpos 0.5 ypos 1.0 xanchor 0.35 yanchor 1.0 rotate None
-    parallel:
-        xpos -0.22
-        ease 1.0 xpos 0.09
-    parallel:
-        zoom 1.48
-        ease 1.0 zoom 1.0
+    scene clinic onlayer master with dissolve:
+        subpixel True xpos 0.5 ypos 1.0 xanchor 0.35 yanchor 1.0 rotate None
+        parallel:
+            xpos -0.22
+            ease 1.0 xpos 0.09
+        parallel:
+            zoom 1.48
+            ease 1.0 zoom 1.0
     mc "You've reached Dr. Ward, how may we help you today?"
     show ric smile with dissolve:
         zoom 1
@@ -127,5 +127,5 @@ label a1:
     show ric pleased
     ric "Hehe, maybe so, but you at least deserve it."
     stop music fadeout 2.0
-
+    scene black with dissolve
     jump choice

@@ -30,9 +30,9 @@ label main1:
 
     "A few corners later, clambering downhill and cutting through an alleyway, I make my way to the door. Clicking the key into place, I turn the knob and walk inside."
 
-    hide bg street_night with circlewipe
+    scene black with dissolve
 
-    scene bg clinic onlayer master with circlewipe:
+    scene bg clinic onlayer master with dissolve:
         subpixel True xpos 0.5 ypos 1.0 xanchor 0.30 yanchor 1.0 rotate None
         parallel:
             xpos -0.22
@@ -228,7 +228,7 @@ label main1:
 
     son "Night Ave. Bug you about work tomorrow!"
 
-    hide bg clinic with fade
+    scene black with dissolve
 
     ##Some sort of transition out of the scene, dunno what yet.
     jump choice

@@ -33,20 +33,7 @@ define circlewipe = ImageDissolve("imagedissolve_circlewipe.png", 1.0, 8)
 # ai: Ai [Main Case Patient, female pronouns, Chinese name for "lovely"]
 # rto: Radio Telephone Operator [Specific to Case E Scene 2]
 
-#ambient sound effect channel
-$renpy.music.register_channel("env", mixer="sfx", loop=True, stop_on_mute=True, tight=False, buffer_queue=True, movie=False)
-
 label start:
-    scene bg clinic
-    show ai neutral:
-        xalign 0.5
-    "TEST BEGIN"
-    ai "Test speech but very long?"
-
-    hide ai
-    show bar neutral:
-        xalign 0.5
-    bar "Test speech but very long?"
-    "TEST END"
+    scene bg clinic with dissolve
     $ renpy.music.play(config.main_menu_music)
     jump intro

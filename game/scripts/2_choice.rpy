@@ -75,6 +75,7 @@ label choice:
         $ update_calls_variables(all_choices_act1)
     elif len(calls_done) == 3: # intro + ACT 1
         $ calls_done.append('main2')
+        # jump credits
         jump main2
     elif len(calls_done) < 13: # intro + ACT 1 + main2 + ACT 2
         $ update_calls_variables(all_choices_act2)

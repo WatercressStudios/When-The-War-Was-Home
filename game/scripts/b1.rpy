@@ -6,7 +6,7 @@ label b1:
 
     scene bg clinic with Dissolve(2.0)
     play music "music/Other Side.ogg" fadein 2.0
-    show fly at right with dissolve
+    show fly at right with dissolve:
         xpos 0.5
         ypos 0.5
 
@@ -107,5 +107,5 @@ label b1:
     stop music fadeout 2.0
 
     hide fly at right with dissolve
-    hide bg clinc with fade
+    scene black with dissolve
     jump choice

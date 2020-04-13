@@ -70,7 +70,7 @@ label intro2:
 
 # BG black snow sky
 # SFX of a cold breeze
-play env "sfx/wind.ogg" fadein 1.0
+    play env "sfx/wind.ogg" fadein 1.0
 
     "Brrr. Looks like it's snowing, just like the forecast said it would."
 
@@ -83,7 +83,7 @@ play env "sfx/wind.ogg" fadein 1.0
     "Well, this is the house."
 
 # SFX of doorbell being pushed
-play sound "sfx/doorbell.ogg"
+    play sound "sfx/doorbell.ogg"
     "I ring the doorbell while reviewing the patient case notes on my tablet once more."
 
     "Discomfort in the joints, starting from two weeks ago. Coincidentally, it was also snowing heavily that day."
@@ -91,7 +91,7 @@ play sound "sfx/doorbell.ogg"
     "This should be a straightforward case."
 
 # SFX of door opening
-play sound "sfx/door open.ogg"
+    play sound "sfx/door open.ogg"
 # sprite of a robot (use a variation or one of the unused/thrown away concepts? no need for emotes or anything)
 
     p1 "Yes?"
