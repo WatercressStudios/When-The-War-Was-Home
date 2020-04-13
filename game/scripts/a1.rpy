@@ -2,6 +2,9 @@
 label a1:
 
     #*ringing sfx*
+    play sound "sfx/phone ring.ogg"
+    pause 3.5
+    play sound "sfx/pick up.ogg"
     #*click sfx*
     mc "You've reached Dr. Ward, how may we help you today?"
     ric "Heeeeeeey, what's up Doc?"
@@ -17,14 +20,20 @@ label a1:
     #*clap sfx*
     ric "Marvelous! Be there in a flash hon!"
     #*click sfx*
+    play sound "sfx/hang up.ogg"
     "Welp, that's today settled for. It's gonna take a while to reach his standards, but I shouldn't complain. An easy job and good pay."
     "Now, where'd did I leave the sander? Still gotta be around here from his last visit"
     #*rummaging folly sfx*
+    play sound "sfx/rumage.ogg"
+    pause 3.0
+    play sound "sfx/doorbell.ogg"
     #*doorbell sfx*
     "Right on cue."
     #show ric
+    play music "music/richter.ogg" fadein 1.0
     ric "Dooooooc! It's been too long! Come here!"
     #*grip sfx*
+    play sound "sfx/hug.ogg"
     "Before I can react, he locks me in a powerful hug. The kind that probably isn't safe for my non-metallic skeleton."
     "Richter is both famous and infamous around these parts, living up to his namesake:"
     "Much like the Richter scale, his ego gets exponentially worse."
@@ -52,11 +61,14 @@ label a1:
     mc "Want me to take a look at it? Maybe I can tune it a little bit."
     "Richter mumbles to himself, his grip on his cape tightening."
     ric "Yeah, umm... Yeah, there’s no good reason not to, right? Feel free."
+    play sound "sfx/cape.ogg"
+    stop music fadeout 3.0
     "He sits down on the examination table, fidgeting.  With a click, he unlocks his cape and I set it aside."
     "I take a screwdriver and remove the screws on the upper arm one by one, loosening up the exo-armor."
     "I gently pry it open to protect the wiring, and take off the front piece and reveal the skeleton beneath."
     #*Scarred Skeleton CG\Sprite*
     "It’s way worse than I anticipated. The scrapes and indentations are numerous, not to mention the large scarring deep in the ball joint."
+    play music "music/scars.ogg" fadein 2.0
     "I touch the surface around the scar and notice a rough grainy texture. Rust? No, it's not scraping off. It’s seared."
     ric "Mmm-well? Do you see what’s wrong?"
     mc "Clearly, yeah. You should have told me sooner. Honestly it's a surprise it's only starting to act up."
@@ -88,5 +100,6 @@ label a1:
     ric "Thank you, Doctor."
     mc "Com’on, Ric. Doc doesn’t need formality"
     ric "Hehe, maybe so, but you at least deserve it."
+    stop music fadeout 2.0
 
     jump choice
