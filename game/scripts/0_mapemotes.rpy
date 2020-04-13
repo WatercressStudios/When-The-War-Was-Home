@@ -10,6 +10,7 @@ init python:
     MapEmote('son sad', 'son base md_sad ed_default brow_sad')
     MapEmote('son angry', 'son base mdo_shout ed_default brow_angry')
     MapEmote('son happy', 'son base md_smile ed_default brow_angry')
+    MapEmote('son happy2', 'son base md_smile ec_default brow_angry')
     MapEmote('son shout', 'son base mdo_shout ed_default brow_angry')
     MapEmote('son groan', 'son base mdo_default ec_default brow_angry')
     MapEmote('son sigh', 'son base mdo_default ec_default brow_sad')
@@ -29,3 +30,4 @@ init python:
     MapEmote('ric dm neutral', 'ric damage md_default ed_default')
     MapEmote('ric dm groan', 'ric damage md_frown ec_default')
     MapEmote('ric dm surprised', 'ric damage mdo_surprised ed_surprised')
+    MapEmote('ric dm pleased', 'ric damage md_smile ec_default')

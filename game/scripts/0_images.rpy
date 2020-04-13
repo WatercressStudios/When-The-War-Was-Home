@@ -8,3 +8,16 @@ init python:
     )
 
     DefineImages('images/bgs', prepend='bg')
+
+layeredimage bg_sky:
+    group base:
+        attribute day default:
+            "bg sky_day"
+        attribute night:
+            "bg sky_night"
+
+    group snowing:
+        attribute lightsnow:
+            "bg snow_day"
+        attribute darksnow:
+            "bg snow_night"
