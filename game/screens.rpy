@@ -136,7 +136,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Image("gui/textbox.png", xalign=0.5, yalign=0.5)
 
 style namebox:
     xpos gui.name_xpos
@@ -250,17 +250,34 @@ screen quick_menu():
         hbox:
             style_prefix "quick"
 
-            xalign 0.5
-            yalign 1.0
+            
+            yalign 0.98
 
-            textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            # text
+            imagebutton:
+                xpos 0.5
+                idle "gui/back.png"
+                action Rollback()
+            imagebutton:
+                idle "gui/save.png"
+                action ShowMenu('save')
+            imagebutton:
+                idle "gui/history.png"
+                action ShowMenu('history')
+            imagebutton:
+                idle "gui/skip.png"
+                action Skip() alternate Skip(fast=True, confirm=True)
+            imagebutton:
+                idle "gui/auto.png"
+                action Preference("auto-forward", "toggle")
+            imagebutton:
+                idle "gui/quicksave.png"
+                action QuickSave()
+            imagebutton:
+                idle "gui/load.png"
+                action QuickLoad()
+            # textbutton _("Prefs") action ShowMenu('preferences')
+            # Note for mobile port there needs to be a custom gui for preferences 
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
