@@ -56,7 +56,7 @@ label intro:
 
     "Aarul's gone ahead and marked the days I'm available."
 
-    "Just gotta {b}pick a patient file{/b}, and then {b}pick a day{/b} on the calendar. How hard can it be?"
+    "Just gotta {b}pick a patient file{/b}, and then the system will take care of the rest. How hard can it be?"
 
     stop music fadeout 2.0
 

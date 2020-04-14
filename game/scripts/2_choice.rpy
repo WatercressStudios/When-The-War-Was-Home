@@ -6,16 +6,16 @@ default calls_available = []
 
 init python:
     choices_menu_text = {
-        'intro2': 'Intro house call',
-        'a1': 'Case A',
-        'b1': 'Case B',
+        'intro2': 'Patient #1562',
+        'a1': 'Patient #1563 - Ric',
+        'b1': 'Patient #1564 - Jason',
         'c1': 'Case C1',
         'c2': 'Case C2',
         'c3': 'Case C3',
         'd1': 'Case D1',
         'd2': 'Case D2',
         'e1': 'Case E',
-        'main2': 'Main 2',
+        'main2': 'Patient #1565',
         'main3': 'Main 3',
         'main4': 'Main 4',
         'main5': 'Main 5',
