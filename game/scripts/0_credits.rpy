@@ -124,7 +124,7 @@ init python:
         ),
         ( "Marketing",
             [
-                "TheAlchemyst"
+                "TheAlchemyst",
                 "Tristan 'Wolf' Barber",
                 "Wolfborg",
                 "Softamoeba",
