@@ -6,7 +6,7 @@ init python:
             [
             ]
         ),
-        ( "Directing",
+        ( "Studio Direction",
             [
                 "Tristan 'Wolf' Barber",
             ]
@@ -14,43 +14,50 @@ init python:
         ( "Story",
             [
                 (
+                    "Writing Direction",
+                    "Tristan 'Wolf' Barber",
+                ),
+                (
                     "Writing",
                     "Tristan 'Wolf' Barber",
                     "Zodai",
-                    "Merritt Barber",
+                    "Merritt 'Empire Ruled' Barber",
                     "Sagittaeri",
                     "Happiness",
+                    "Voiderling"
                 ),
             ]
         ),
-        ( "Editing Directing",
+        ( "Editing Direction",
             [
                 "TheAlchemyst",
             ]
         ),
         ( "Editing",
             [
+                "TheAlchemyst",
                 "Tristan 'Wolf' Barber",
             ]
         ),
         ( "Audio",
             [
                 (
-                    "Music Directing",
+                    "Music Direction",
                     "Paul Robins",
                 ),
                 (
                     "Music",
+                    "Paul Robins",
                     "Kierious",
                     "Noah 'Speedy' Aman",
-                    "Jae",
+                    "Yuuki Rafflesia",
                 ),
                 (
                     "Sound Design",
                     "Paul Robins",
                 ),
                 (
-                    "Sound Editing",
+                    "Sound Mixing and Mastering",
                     "Paul Robins",
                 ),
             ]
@@ -59,8 +66,8 @@ init python:
         ( "Art",
             [
                 (
-                    "Sprite",
-                    "Kenta",
+                    "Sprite Art",
+                    "KentaChiba",
                 ),
                 (
                     "Concept Art",
@@ -85,8 +92,8 @@ init python:
         ( "Code",
             [
                 (
-                    "Development Director",
-                    "Happiness",
+                    "Programming Director",
+                    "Happiness+",
                 ),
                 (
                     "Tools and UI",
@@ -102,7 +109,6 @@ init python:
                     "Sagittaeri",
                     "Happiness",
                     "Wei Yuan Lee",
-                    "Zodai",
                 ),
                 (
                     "Audio",
@@ -111,17 +117,20 @@ init python:
             ]
         ),
 
-        ( "Marketing Directing",
+        ( "Marketing Direction",
             [
                 "TheAlchemyst",
             ]
         ),
         ( "Marketing",
             [
-                "Bodo",
+                "TheAlchemyst"
+                "Tristan 'Wolf' Barber",
+                "Wolfborg",
+                "Softamoeba",
             ]
         ),
-        ( "Cinematics Directing",
+        ( "Cinematics Direction",
             [
                 "TheAlchemyst",
             ]
