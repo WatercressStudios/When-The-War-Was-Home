@@ -136,7 +136,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Image("gui/textbox.png", xalign=0.5, yalign=0.5)
 
 style namebox:
     xpos gui.name_xpos
@@ -250,17 +250,34 @@ screen quick_menu():
         hbox:
             style_prefix "quick"
 
+            spacing 100
+            yalign 0.99
             xalign 0.5
-            yalign 1.0
 
-            textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            # text
+            imagebutton:
+                idle "gui/back.png"
+                action Rollback()
+            imagebutton:
+                idle "gui/history.png"
+                action ShowMenu('history')
+            imagebutton:
+                idle "gui/skip.png"
+                action Skip() alternate Skip(fast=True, confirm=True)
+            imagebutton:
+                idle "gui/auto.png"
+                action Preference("auto-forward", "toggle")
+            imagebutton:
+                idle "gui/save.png"
+                action ShowMenu('save')
+            imagebutton:
+                idle "gui/quicksave.png"
+                action QuickSave()
+            imagebutton:
+                idle "gui/load.png"
+                action QuickLoad()
+            # textbutton _("Prefs") action ShowMenu('preferences')
+            # Note for mobile port there needs to be a custom gui for preferences
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -344,6 +361,8 @@ style navigation_button:
 
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
+    align (0.5, 0.5)
+    text_align 0.5
 
 
 ## Main Menu screen ############################################################
@@ -370,13 +389,15 @@ screen main_menu():
     use navigation
 
     if gui.show_name:
-
         vbox:
+            align (0.25, 0.85)
             text "[config.name!t]":
                 style "main_menu_title"
+                color "#000"
 
             text "[config.version]":
                 style "main_menu_version"
+                color "#000"
 
 
 style main_menu_frame is empty
@@ -431,10 +452,6 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
         hbox:
 
-            ## Reserve space for the navigation section.
-            frame:
-                style "game_menu_navigation_frame"
-
             frame:
                 style "game_menu_content_frame"
 
@@ -471,6 +488,10 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
                     transclude
 
+            ## Reserve space for the navigation section.
+            frame:
+                style "game_menu_navigation_frame"
+
     use navigation
 
     textbutton _("Return"):
@@ -478,7 +499,13 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
         action Return()
 
-    label title
+    label title:
+        background Frame("gui/pausemenu/pausemenutitle.png", 0, 0)
+        xysize (600, 150)
+        text_align (0.5, 0.5)
+        text_text_align 0.5
+        yalign 0.05
+        text_size 64
 
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")
@@ -508,9 +535,11 @@ style game_menu_navigation_frame:
     yfill True
 
 style game_menu_content_frame:
-    left_margin 80
-    right_margin 40
+    left_margin 100
+    right_margin 600
     top_margin 20
+    padding (50, 50)
+    background Frame("gui/pausemenu/pausemenubackground.png", 20, 20)
 
 style game_menu_viewport:
     xsize 1840
@@ -659,6 +688,7 @@ screen file_slots(title):
 
                 xalign 0.5
                 yalign 1.0
+                yoffset -30
 
                 spacing gui.page_spacing
 
@@ -675,6 +705,13 @@ screen file_slots(title):
                     textbutton "[page]" action FilePage(page)
 
                 textbutton _(">") action FilePageNext()
+            frame:
+                background Frame("gui/pausemenu/saveandloadpageselector.png", 0, 0)
+                padding (0,0)
+                margin (0,0)
+                xysize (1000, 100)
+                align (0.5, 1.02)
+                yoffset -30
 
 
 style page_label is gui_label
@@ -723,8 +760,10 @@ screen preferences():
     use game_menu(_("Preferences"), scroll="viewport"):
 
         vbox:
-
+            yoffset 100
+            xsize 1900
             hbox:
+                xalign 0.5
                 box_wrap True
 
                 if renpy.variant("pc") or renpy.variant("web"):
@@ -755,6 +794,7 @@ screen preferences():
             null height (4 * gui.pref_spacing)
 
             hbox:
+                xalign 0.5
                 style_prefix "slider"
                 box_wrap True
 
@@ -1202,21 +1242,15 @@ style confirm_button_text:
 ## https://www.renpy.org/doc/html/screen_special.html#skip-indicator
 
 screen skip_indicator():
-
     zorder 100
     style_prefix "skip"
 
     frame:
-
-        hbox:
-            spacing 12
-
-            text _("Skipping")
-
-            text "▸" at delayed_blink(0.0, 1.0) style "skip_triangle"
-            text "▸" at delayed_blink(0.2, 1.0) style "skip_triangle"
-            text "▸" at delayed_blink(0.4, 1.0) style "skip_triangle"
-
+        background im.FactorScale("gui/skipdisplay.png", 0.12)
+        xysize (200, 50)
+        text _("Skipping"):
+            align (0.5, 0.5)
+            text_align 0.5
 
 ## This transform is used to blink the arrows one after another.
 transform delayed_blink(delay, cycle):
