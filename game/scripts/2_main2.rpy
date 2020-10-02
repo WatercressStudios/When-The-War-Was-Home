@@ -37,7 +37,5 @@ label main2:
 
     "But this one is familiar."
 
-    scene black with dissolve
-    call screen tobecontinued with dissolve
-    call screen credits with dissolve
-    #jump choice
+    
+    jump choice
