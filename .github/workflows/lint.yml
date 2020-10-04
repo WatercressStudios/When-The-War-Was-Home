@@ -19,9 +19,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v1
     - uses: ProjectAliceDev/renpy-lint-action@v1.1.0
       with:
-        project-dir: 'When-The-War-Was-Home'
-      env:
-        SDL_AUDIODRIVER: dummy
-        SDL_VIDEODRIVER: dummy  
+        project-dir: '.'
+#      env:
+#        SDL_AUDIODRIVER: dummy
+#       SDL_VIDEODRIVER: dummy  
