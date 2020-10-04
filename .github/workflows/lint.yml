@@ -23,6 +23,7 @@ jobs:
     - uses: ProjectAliceDev/renpy-lint-action@v1.1.0
       with:
         project-dir: '.'
-#      env:
-#        SDL_AUDIODRIVER: dummy
-#       SDL_VIDEODRIVER: dummy  
+      env:
+        SDL_AUDIODRIVER: dummy
+        SDL_VIDEODRIVER: dummy  
+ 
