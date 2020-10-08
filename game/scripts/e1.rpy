@@ -72,4 +72,5 @@ label e1:
     "Miranda tenses briefly, before relaxing and closing her eyes."
 
     "Time appears to speed up, and reality begins to slowly distort until it fades away, replaced with something else entirely"
+    scene black with dissolve
     jump e2
