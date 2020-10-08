@@ -1,4 +1,5 @@
 label e1:
+    #add zoom in from left to right on the bottom right corner of the screen
     "Whew, it's hot today."
 
     "A tidy white picket fence is almost glowing in the midday sun."
