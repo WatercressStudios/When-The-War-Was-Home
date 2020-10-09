@@ -1,5 +1,8 @@
 label e1:
-    #add zoom in from left to right on the bottom right corner of the screen
+    scene bg house_day with dissolve:
+        zoom 3 align (0.0, 1.0)
+        linear 120 align (1.0, 1.0)
+    #add footsteps of Imani walking here.
     "Whew, it's hot today."
 
     "A tidy white picket fence is almost glowing in the midday sun."
@@ -19,7 +22,7 @@ label e1:
     m "I like that you're punctual, hun. It's poor manners to keep an old woman waiting. I'm Miranda Bates."
 
     "I blush a bit, quickly disarmed by her friendly warmth."
-    
+
     mc "Pleased to make your acquaintance, ma'am. So I hear that you're having some trouble sleeping?"
 
     m "You know, I'm not one for asking for much help, truth be told. But I heard that there was a doctor in the neighborhood who might be able to help me."

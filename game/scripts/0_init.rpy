@@ -24,6 +24,8 @@ define Girl = Character("Little Girl", who_color="#fff", what_color="fff")
 #transitions
 define circlewipe = ImageDissolve("imagedissolve_circlewipe.png", 1.0, 8)
 
+
+
 ## The script of the game goes in this file.
 
 # son: Aarul [The MC's Adopted Son, Bangladeshi male name for "brilliant"]

@@ -33,4 +33,14 @@ init python:
     MapEmote('ric dm pleased', 'ric damage md_smile ec_default')
 
     #Miranda
-    
+    MapEmote('m smiling', 'm base md_smile ed_default brow_default')
+    MapEmote('m serious', 'm base mdo_default ed_default brow_default')
+    MapEmote('m off', 'm base md_default ec_default brow_default')
+    MapEmote('m sappy', 'm base md_smile ed_default brow_sad')
+    MapEmote('m sad', 'm base md_sad ed_default brow_sad')
+    MapEmote('m sadder', 'm base mdo_default ed_default brow_sad')
+    MapEmote('m saddest', 'm base mdo_surprised ed_default brow_sad')
+    MapEmote('m stern', 'm base md_sad ed_default brow_angry')
+    MapEmote('m angry', 'm base mdo_surprised ed_default brow_angry')
+    MapEmote('m taunting', 'm base md_smile ed_default brow_angry')
+
