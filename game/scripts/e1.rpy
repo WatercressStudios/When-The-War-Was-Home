@@ -5,7 +5,7 @@ label e1:
     "A tidy white picket fence is almost glowing in the midday sun."
 
     "Within the yard, an old woman sings a classic song to herself as she tends to her flower garden."
-
+    #happy
     m "Oh baby there ain’t no mountain high enough"
 
     m "ain’t no valley low enough"
@@ -15,11 +15,11 @@ label e1:
     "An unexpected smile spreads across my face."
 
     "The woman notices me, and with a warm, friendly smile, her face brightens."
-
+    #happy talking
     m "I like that you're punctual, hun. It's poor manners to keep an old woman waiting. I'm Miranda Bates."
 
     "I blush a bit, quickly disarmed by her friendly warmth."
-
+    
     mc "Pleased to make your acquaintance, ma'am. So I hear that you're having some trouble sleeping?"
 
     m "You know, I'm not one for asking for much help, truth be told. But I heard that there was a doctor in the neighborhood who might be able to help me."

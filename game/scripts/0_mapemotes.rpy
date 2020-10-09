@@ -31,3 +31,6 @@ init python:
     MapEmote('ric dm groan', 'ric damage md_frown ec_default')
     MapEmote('ric dm surprised', 'ric damage mdo_surprised ed_surprised')
     MapEmote('ric dm pleased', 'ric damage md_smile ec_default')
+
+    #Miranda
+    
