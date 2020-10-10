@@ -1,17 +1,21 @@
 label c2:
+    
+    scene bg street_day with dissolve
     mc "And you're sure you will have time, right?"
 
+    show bar serious with dissolve
+         x 0.10
     bar "I'm sure, I'm sure."
 
     "The bartender's voice comes ringing through the other side of the phone, as I walk through the streets to the bar."
+    
+    bar speaking "Now that we know how long it'll take, lunch breaks will last as long as I need them to. I have my shifts covered however long it takes."
 
-    bar "Now that we know how long it'll take, lunch breaks will last as long as I need them to. I have my shifts covered however long it takes."
-
-    bar "I know better than to leave you empty handed twice in a row."
+    bar serious "I know better than to leave you empty handed twice in a row."
 
     mc "Sounds good to me.  Easier this goes, better for the both of us."
 
-    bar "Cheers to that, I say."
+    bar happy "Cheers to that, I say."
 
     bar "How long until you arrive?"
 
