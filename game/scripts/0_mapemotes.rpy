@@ -4,6 +4,14 @@ init python:
 
     ### BAR EMOTES
     MapEmote('bar neutral', 'bar base md_default ed_default brow_default')
+    MapEmote('bar sad', 'bar base md_sad ec_default brow_sad')
+    MapEmote('bar happy', 'bar base md_smile ed_default brow_default')
+    MapEmote('bar angry', 'bar base mc_sad ed_default brow_angry')
+    MapEmote('bar shocked', 'bar base m_shock ec_default brow_default')
+    MapEmote('bar serious', 'bar base md_sad ed_default brow_angry')
+    MapEmote('bar sigh', 'bar base md_default ec_default brow_sad')
+    MapEmote('bar speaking', 'bar base md_default ed_default brow_default')
+    MapEmote('bar snarky', 'bar base mdo_default ed_default brow_angry')
 
     #Son/Aarul
     MapEmote('son neutral', 'son base md_default ed_default brow_default')
