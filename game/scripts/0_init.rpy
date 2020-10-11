@@ -19,7 +19,8 @@ define GF3 = Character("Player 5", who_color="#fff")
 define bui = Character("Winston", callback=speaker("bui"), who_color="#fff")
 define fri = Character("Charlotte", callback=speaker("fri"), who_color="#fff")
 define Girl = Character("Little Girl", who_color="#fff", what_color="fff")
-
+define b = Character(kind=nvl,  what_xalign=0.5, window_xalign=0.5, what_text_align=0.5,)
+#remember to set color to green for b and change the font 
 
 #transitions
 define circlewipe = ImageDissolve("imagedissolve_circlewipe.png", 1.0, 8)

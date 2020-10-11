@@ -8,8 +8,10 @@ label e1:
     "A tidy white picket fence is almost glowing in the midday sun."
 
     "Within the yard, an old woman sings a classic song to herself as she tends to her flower garden."
-    #happy
-    m "Oh baby there ain’t no mountain high enough"
+    #footsteps end abruptly
+    #Imani is awestruck
+    
+    m "{cps=3}Oh baby there ain’t no mountain high enough"
 
     m "ain’t no valley low enough"
 
