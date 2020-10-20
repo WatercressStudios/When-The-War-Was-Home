@@ -10,9 +10,9 @@ label c1:
 
     mc "Yes ma'am. You know how I like my bourbon."
 
-    bar happy "Sure thing bud  ."
+    bar happy "Sure thing bud."
 
-    hide bar happy
+    hide bar happy with dissolve
 
     "She slides a glass over to me, filled with a dark amber liquid. We lock eyes and she gives a slight nod. I return, receiving the message."
 
@@ -28,7 +28,7 @@ label c1:
 
     mc "Looks like you're close to finishing the renovations?"
 
-    show bar happy with dissolve
+    show bar happy with dissolve:
          xalign 0.5
 
     bar "Sure am. 'Bout time this old girl learned some new tricks. Oh, and the bar's getting a fresh coat of paint too."
