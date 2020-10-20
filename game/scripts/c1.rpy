@@ -10,7 +10,9 @@ label c1:
 
     mc "Yes ma'am. You know how I like my bourbon."
 
-    bar happy "Sure thing bud."
+    show bar happy 
+
+    bar "Sure thing bud."
 
     hide bar happy with dissolve
 
