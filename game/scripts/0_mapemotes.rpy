@@ -39,3 +39,10 @@ init python:
     MapEmote('ric dm groan', 'ric damage md_frown ec_default')
     MapEmote('ric dm surprised', 'ric damage mdo_surprised ed_surprised')
     MapEmote('ric dm pleased', 'ric damage md_smile ec_default')
+
+    # bui
+    MapEmote('bui green angry', 'bui green base mdo_angry ed_angry')
+    MapEmote('bui green sad', 'bui green base md_frown ed_sad')
+    MapEmote('bui green surprised', 'bui green base mdo_surprised ed_surprised')
+    MapEmote('bui green smile', 'bui green base md_smile ed_default')
+    MapEmote('bui green happy', 'bui green base mdo_happy ed_default')

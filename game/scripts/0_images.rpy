@@ -21,3 +21,6 @@ layeredimage bg_sky:
             "bg snow_day"
         attribute darksnow:
             "bg snow_night"
+
+image bg apartmenthallway_grayscale = im.Grayscale("images/bgs/apartmenthallway.png")
+image bg controlroom_grayscale = im.Grayscale("images/bgs/controlroom.png")

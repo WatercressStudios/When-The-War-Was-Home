@@ -1,7 +1,7 @@
 
 label d1:
     # BG sky with black snow
-
+    scene bg_sky day darksnow with dissolve
     "It's freezing today. The forecast said we might get some sunlight about now."
 
     "Filthy liars."
@@ -13,7 +13,7 @@ label d1:
     "I hope everyone's properly cleaning out the black snow from their chassis. Last thing we need is for the clinic to be flooded with black snow poisoning cases."
 
     # SFX new message on phone
-
+    play sound "sfx/phone ring.ogg"
     "It's a text message from Aarul."
 
     "\"Don't forget to pack your umbrella. They updated the forecast this morning.\""
@@ -23,12 +23,14 @@ label d1:
     "Too late, kiddo."
 
     # BG of building exterior
-
+    scene bg apartmentexterior with dissolve
     "Looks like this apartment has seen better days."
 
     "I step up to the front door, brush the black snow off my shoulders, and raise my finger towards the doorbell. But before I can touch it, the display panel next to the door lights up."
 
     # show building emoticon and panel
+    show bui green angry with dissolve:
+        align (1.0, 0.333)
 
     # VA: spoken with authority, like a soldier
     bui "Halt. Identify yourself."
@@ -37,10 +39,12 @@ label d1:
 
     mc "Doctor Imani Ward. The superintendent asked for a house call."
 
+    show bui green default
     bui "Please hold."
 
     # sfx of scanning
 
+    show bui green smile
     bui "Visual identification verified. Please answer the security question to complete your authentication."
 
     "Um, security question? I quickly skim through the case file on my tablet again."
@@ -51,6 +55,7 @@ label d1:
 
     mc "Sorry, there must be some miscommunication-"
 
+    show bui green default
     bui "Please state the name of your adopted child."
 
     "Excuse me? That's private information!"
@@ -63,6 +68,7 @@ label d1:
 
     mc "Aarul."
 
+    show bui green happy
     bui "Authentication successful."
 
     # VA: tone of the voice suddenly changes to a friendly butler/servant
@@ -73,6 +79,7 @@ label d1:
     "That's quite the change in attitude. Well, I'm not complaining. I nod at Winston before stepping inside."
 
     # BG building corridor
+    scene bg apartmenthallway with dissolve
 
     "A comfortable warm air instantly envelops me."
 
@@ -121,6 +128,8 @@ label d1:
 
     ric "But, you've called doc, so all's forgiven, Winston."
 
+    show bui green default with dissolve:
+        align (0.82, 0.25)
     bui "Ahem. Doctor Ward, please come this way."
 
     # fade out all characters
@@ -128,6 +137,7 @@ label d1:
     "Guide arrows start lighting up the corridor, leading me around a corner, and then another."
 
     # BG control room
+    scene bg controlroom with dissolve
 
     "The sign on the door says “Superintendent’s Room”, but with all the monitors it looks more like a security office."
 
@@ -137,6 +147,8 @@ label d1:
 
     "Yup, this building is definitely one of those utilized by the army during the war. Probably as a barracks, given the features."
 
+    show bui green default with dissolve:
+        align (0.5, 0.105)
     mc "I take it you're the superintendent who called my clinic. Are you also the patient?"
 
     bui "Yes and yes, Doctor Ward."
@@ -151,10 +163,12 @@ label d1:
 
     mc "Why don't we begin with the problem. Tell me about it."
 
+    show bui green sad
     bui "It really isn't necessary, Doctor Ward."
 
     mc "I insist."
 
+    show bui green default
     bui "Very well."
 
     bui "It's come to my attention that THERMOS-A and B have been infected by the KIXET virus."
@@ -171,6 +185,7 @@ label d1:
 
     mc "Do you have it quarantined? I'd like to collect a sample of the virus."
 
+    show bui green smile
     bui "Yes, Doctor Ward. I should be fine for a couple of weeks. However, it really isn't necessary. My diagnosis is accurate."
 
     "I unzip my work bag and pull out an empty neural jack."
@@ -182,6 +197,7 @@ label d1:
     mc "..." # VA: worried/confused sigh or groan
 
     # BG building exterior
+    scene bg apartmentexterior with dissolve
 
     "It's been an hour since I've sent off the samples to the cyber oncologist contact who owes me a favor."
 
@@ -225,6 +241,7 @@ label d1:
     ric "Don't tell him, but about a year after I moved in..."
 
     # FLASHBACK BG OF CORRIDOR (probably just BW version?)
+    scene bg apartmenthallway_grayscale with dissolve
 
     ric "I couldn't sleep, and was on my way out for some fresh air."
 
@@ -235,6 +252,7 @@ label d1:
     ric "Probably because he was preoccupied."
 
     # FLASHBACK BG OF CONTROL ROOM (BW version?)
+    scene bg controlroom_grayscale with dissolve
 
     ric "As I was passing by his room, I could see a video playing through the cracks of the slightly-open door."
 
@@ -243,6 +261,7 @@ label d1:
     ric "I think he watches it every night when we're asleep."
 
     # BG present time building exterior
+    scene bg apartmentexterior with dissolve
 
     mc "...I see. Thanks for letting me know." # VA: pause after "I see"
 
@@ -251,6 +270,7 @@ label d1:
     mc "Of course."
 
     # sfx of a new text message
+    play sound "sfx/phone ring.ogg"
 
     "The tablet vibrates in my hands. My oncologist friend just sent me the results. I quickly open it."
 
@@ -261,24 +281,30 @@ label d1:
     mc "Doctor-patient confidentiality."
 
     # BG control room
-
+    scene bg controlroom with dissolve
+    show bui green default with dissolve:
+        align (0.5, 0.105)
     bui "Doctor Ward, I take it you've received the results from the lab?"
 
     mc "Yes. You were right. It's KIXET."
 
+    show bui green happy
     bui "Excellent! Shall we begin with the amputation?"
 
     "I nod. There really isn't any other option."
 
+    show bui green smile
     mc "Before that, the labs have picked up tracks of military signatures in the virus."
 
     mc "They're saying it probably passed through several military systems. For example, the air raid alarm and the self-defense weapon array."
 
     # VA: starts to sound nervous
+    show bui green surprised
     bui "Is… is that right?"
 
     mc "Winston, please disclose the schematics of your systems. I need to examine all of them."
 
+    show bui green default
     bui "There's no need. I have it quarantined in thermocontrols."
 
     mc "Winston. You know how serious this is. As your doctor, I'm asking you to disclose your schematics."
@@ -297,6 +323,7 @@ label d1:
 
     "Winston must have peeked at the lab results and drew the same conclusion, because he speaks up before I do."
 
+    show bui green angry
     bui "No. I refuse to amputate my military systems."
 
     mc "Winston..."
@@ -308,12 +335,14 @@ label d1:
     bui "Then I apologise for wasting your time, Doctor Ward. Please follow the guidelights out."
 
     # BG to corridor
+    scene bg apartmenthallway with dissolve
 
     "Nothing I say after that makes a difference. Winston has shut me out."
 
     "But… it's not over."
 
     # BG to exterior
+    scene bg apartmentexterior with dissolve
 
     "I pull out my phone and start a call."
 
@@ -323,5 +352,6 @@ label d1:
     mc "We need to talk."
 
     # fade to black, hiding the conversation
+    scene black with dissolve
     # End scene
     jump choice
