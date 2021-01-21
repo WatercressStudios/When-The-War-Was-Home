@@ -41,7 +41,9 @@ label c1:
 
     mc "Killing the old to bring in the new. Sounds like you finally took my advice."
 
-    bar serious "Don't look so smug. It's only natural - I've gotta look after you assholes after all."
+    show bar serious 
+    
+    bar "Don't look so smug. It's only natural - I've gotta look after you assholes after all."
 
     "The barkeep throws down the rag, rolling down her sleeves as she walks around the bar."
 
@@ -63,25 +65,35 @@ label c1:
 
     mc "Not sure. Memory issues can be related to any number of things, from PTSD to sleep deprivation. I'll need you to explain the issues you're having in more detail before I can recommend treatment."
 
-    bar sad "My memory's been shaky lately, but that's nothing new. I've been having trouble remembering specific events,  and sometimes the memories sort of… blur into each other."
+    show bar sad 
+    
+    bar "My memory's been shaky lately, but that's nothing new. I've been having trouble remembering specific events,  and sometimes the memories sort of… blur into each other."
 
     bar "An item where it shouldn't be, an event out of order, damage before it actually happened, that sort of shit."
 
     mc "Damage? Do you have these issues with memories relating to your service?"
 
-    bar neutral "Yeah. I didn't contact you until it started to get to my more recent memories."
+    show bar neutral
+    
+    bar  "Yeah. I didn't contact you until it started to get to my more recent memories."
 
     mc "You should have talked to me the second it happened."
 
-    bar angry "I know, I know, you don't have to tell me twice. Don't ask for help until you absolutely have to, you know the deal."
+    show bar angry 
+    
+    bar "I know, I know, you don't have to tell me twice. Don't ask for help until you absolutely have to, you know the deal."
 
     mc "Unfortunately, I do."
 
-    bar serious "So. What're your plans?"
+    show bar serious
+    
+    bar "So. What're your plans?"
 
     mc "I'm going to jack into you."
 
-    bar angry "Liquor me up first, damn."
+    show bar angry
+    
+    bar  "Liquor me up first, damn."
 
     "..."
 
@@ -89,21 +101,29 @@ label c1:
 
     mc "I do. I need to see the memories firsthand."
 
-    bar sigh "She sighs, fidgeting in her chair, stopping only when it's clear the discomfort won't go away."
+    show bar sigh
+    
+    bar "She sighs, fidgeting in her chair, stopping only when it's clear the discomfort won't go away."
 
-    bar sad "I'm sorry for wasting your time then, Doc. We'll have to do that another time, my lunch break is too short for something like that."
+    show bar sad
+    
+    bar "I'm sorry for wasting your time then, Doc. We'll have to do that another time, my lunch break is too short for something like that."
 
     mc "You know it doesn't bother me. I'll just come by another day, it's no problem at all."
 
     "The bartender looks at me, trying to read me. She stands up, finally satisfied."
 
-    bar happy "Well, I should get back to work early then. I gotta afford this operation somehow. We all know how much you like to price gouge us."
+    show bar happy
+    
+    bar "Well, I should get back to work early then. I gotta afford this operation somehow. We all know how much you like to price gouge us."
 
     "She winks, knowing damn well that's not how I operate."
 
     "I follow her out of the room, dropping some credits on the counter as I leave."
 
-    bar angry "Hey!"
+    show bar angry 
+    
+    bar "Hey!"
 
     hide bar angry with dissolve
 
