@@ -1,9 +1,15 @@
 label d2:
+
+scene bg street_day with dissolve 
+
+show son surprise with dissolve 
     son "Wow, you weren't kidding. That wall's about to crumble."
 
     mc "Shh, not so loud, he can hear you."
 
     # show bui
+
+    show bui red angry with dissolve 
 
     bui "Halt. Identify yourself." # VA: yup, this is the same line as Scene 1
 
@@ -15,9 +21,13 @@ label d2:
 
     mc "Winston, I was {i}just{/i} here. You visually identified me and everything."
 
+    show son happy
+
     son "I see you've been making friends as usual."
 
     mc "Hey!"
+
+    show bui red frown 
 
     bui "Identification failure. Go away."
 
@@ -28,6 +38,8 @@ label d2:
 
     "I smile and nod at her. Just on time."
 
+    show 
+
     # show sprite if available
     # VA: confident, clear. used to be a leader of soldiers.
     fri "Winston Zu."
@@ -36,6 +48,7 @@ label d2:
 
     fri "Up to no good, are we?"
 
+    show bui green surprised 
     # VA: pleasantly surprised tone
     bui "Sergeant? What are you doing here?"
 
