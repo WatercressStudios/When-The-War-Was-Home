@@ -1,11 +1,23 @@
 label c2:
+
+    scene bg street_day with dissolve
+    scene bg snow_day with dissolve
+
     mc "And you're sure you will have time, right?"
+
+    ## make a side sprite for bar tender
+
+    show bar sigh with dissolve
 
     bar "I'm sure, I'm sure."
 
     "The bartender's voice comes ringing through the other side of the phone, as I walk through the streets to the bar."
 
+    show bar speaking
+
     bar "Now that we know how long it'll take, lunch breaks will last as long as I need them to. I have my shifts covered however long it takes."
+
+    show bar snarky
 
     bar "I know better than to leave you empty handed twice in a row."
 
@@ -13,21 +25,31 @@ label c2:
 
     bar "Cheers to that, I say."
 
+    show bar sigh 
+
     bar "How long until you arrive?"
 
     mc "I'm a few blocks away, five minutes at most."
 
     mc "The sooner I get out from this damned snow the better."
 
+    show bar happy
+
     bar "Shit's darker than my sense of humor."
 
     mc "You don't know the half of it."
 
-    bar "You'd be surprised."
+    show bar snarky
+
+    bar "You' be surprised."
+
+    show bar neutral
 
     bar "Anyway, see you soon.  I'll grab some cookies in case you need a snack."
 
     mc "Later."
+
+    hide bar neutral
 
     "We close the line as I shuffle the phone back into my pocket, chugging my water along the last bit of the way."
 
@@ -41,21 +63,34 @@ label c2:
 
     "...And where war is involved, you aren't likely to ever forget."
 
+    scene bg apartmenthallway with dissolve
+    ##use the one of those renpy camera to make this look different maybe a slow zoom in
+
     "I pull myself up the stairs to the back entrance, knock on the door for the manager to let me through, and move through the hallways until I reach the right room."
 
+    scene bg barbackroom with dissolve
+
+    show bar happy with dissolve
     bar "Welcome, Doc.  Good to see you finally made it."
 
     "The bartender sits at a chair in the corner, eating down a half-full jar of cookies as she bites off a good chunk of one."
 
+    show bar shocked 
+
     bar "...This is some good shit."
+
 
     bar "Have you ever wondered about how weird it is to eat something?"
 
     mc "Not as far as I can remember."
 
+    show bar snarky
+
     "She offers a noncommittal shrug, and I take a seat at a nearby chair, pulling it up to her so we can begin."
 
     mc "Ready?"
+
+    show bar snarky 
 
     bar "Not at all, but it's better to get it over with."
 
@@ -63,17 +98,25 @@ label c2:
 
     "The bartender shifts her eyes, and pulls out a cookie with a smile."
 
+    show bar happy
+
     bar "Uh… you want a snack?"
 
     mc "You know, I'd love to do my job."
 
     "I smirk at her, betraying my patience. This would be hard for anyone."
 
+    show bar snarky 
+
     bar "You aren't making this any easier, you know?"
 
     mc " Ahh don't worry, you won't feel a thing."
 
+    show bar snarky
+
     bar "Easy to say when it's not you."
+
+    show bar sigh
 
     "The bartender sighs, and eats another cookie."
 
@@ -81,7 +124,11 @@ label c2:
 
     mc "Get comfortable.  We can talk about what's in there when you wake up."
 
+    show bar sad
+
     bar "Sure wish we had a bed in here."
+
+    hide bar sad 
 
     "The bartender sweeps her hair out of the way, and brings the jack to the back of her neck."
 
@@ -91,11 +138,21 @@ label c2:
 
     mc "Feeling alright?"
 
+    #side bar sprite again
+
+    show bar serious 
+
     bar "Nothing bad enough to stop here."
+
+    show bar sigh
 
     bar "I'll manage somehow, always have."
 
     mc "See you in a bit, then.  Find a good place to lay down."
+
+    hide bar sigh 
+
+    #hide bg with  circle dive
 
     "I lean back and rest up against the wall, as the bartender rests her head on the table."
 
@@ -103,7 +160,11 @@ label c2:
 
     ##"---COMMENCING DIVE---"
 
+    # show bg with transtion of opening up eyes circle dive
+
     "And when I open my eyes, a field of grey is laid out before me."
+
+    scene bg street_night with dissolve
 
     "A ruined city, with broken walls and shattered windows, and towers of grey rising into the sky."
 
@@ -124,16 +185,20 @@ label c2:
     "...With a few seconds thought, I swipe away the console."
     "The problem is with the memories.  Whatever's going on here, it's best to see it for myself."
 
+    ##camera  movement from left to right
+
     "I look around and survey the area.  A war-torn city in the middle of a battlefield, and a military camp in the middle of a clearing."
 
     ##Maybe the doc recognizes the city from his own time in the war?  If we wanna edit something like that in later we can.
+
+    scene bg flashbacktents with dissolve
 
     "I walk into one of the tents, towards a small group of infantry playing cards around a table."
 
     ##I know nothing about the sorts of card games they could play, someone else write this part.  Include some banter between the soldiers - if you can, soldier sprites w/ some distinctions like different scarf color.  3-5 different ones.
     ###Here ya go, courtesy of Empire
 
-    "I walk into one of the tents, towards a small group of infantry playing cards around a table."
+ 
 
     G1 "What you got on a Moe, partner?"
 
