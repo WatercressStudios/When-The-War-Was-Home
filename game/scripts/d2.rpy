@@ -9,8 +9,6 @@ show son surprise with dissolve
 
     # show bui
 
-    show bui red angry with dissolve 
-
     bui "Halt. Identify yourself." # VA: yup, this is the same line as Scene 1
 
     mc "Doctor Imani Ward, and this is my son, Aarul."
@@ -27,8 +25,6 @@ show son surprise with dissolve
 
     mc "Hey!"
 
-    show bui red frown 
-
     bui "Identification failure. Go away."
 
     "We shouldn't be wasting time like this. If we don't amputate his military systems soon, the virus will spread."
@@ -38,7 +34,7 @@ show son surprise with dissolve
 
     "I smile and nod at her. Just on time."
 
-    show 
+    show fri happy with dissolve 
 
     # show sprite if available
     # VA: confident, clear. used to be a leader of soldiers.
@@ -48,11 +44,12 @@ show son surprise with dissolve
 
     fri "Up to no good, are we?"
 
-    show bui green surprised 
     # VA: pleasantly surprised tone
     bui "Sergeant? What are you doing here?"
 
     "She gestures towards Aarul and me."
+
+    show fri snarky 
 
     fri "They invited me. And please. It's just Charlotte now."
 
@@ -61,15 +58,22 @@ show son surprise with dissolve
     # sfx of door opening
     "And just like that, the door swings open. Guess no authentication is needed for old friends."
 
+    show fri neutral
+
     fri "That I'll do. You two first."
 
     "Aarul and I thank her and slip inside before Winston decides to shut the door."
 
     # BG corridor
+    scene bg patientroom with dissolve 
+
+    show fri happy 
 
     fri "I see you've redecorated. Gosh, I missed this place. The musky smell of sweat and oil."
 
     fri "Boisterous soldiers who can't decide if they're adults or teenagers."
+
+    show fri snarky 
 
     fri "Drab grey walls lined with equipment we can't fit in storage."
 
@@ -77,11 +81,17 @@ show son surprise with dissolve
 
     # BG control room
 
+    scene bg controlroom with dissolve
+
+    show fri happy 
+
     fri "Ahh, the command center. We used to play card games here to take our mind off things."
 
     bui "And to monitor for bogeys in the airspace. I had the best radar systems in the region."
 
     "Charlotte walks around the room, occasionally touching a panel, a small smile creeping onto her face."
+
+    show fri questioning 
 
     fri "So what's wrong with you? Why did the doctor track me down?"
 
@@ -90,6 +100,8 @@ show son surprise with dissolve
     "I shake my head no."
 
     bui "...It's KIXET."
+
+    show fri serious 
 
     "Charlotte stiffens, her left hand still on one of the panels."
 
@@ -105,6 +117,8 @@ show son surprise with dissolve
 
     bui "I can't."
 
+    show fri serious 
+
     fri "Why not?"
 
     "Winston doesn't reply at first, and Charlotte waits patiently."
@@ -115,6 +129,8 @@ show son surprise with dissolve
 
     fri "You're more than just a soldier. You're Winston Zu. Right now, you're also the superintendent for this apartment."
 
+    show fri happy 
+
     fri "And from what I can see, you're doing a damn fine job."
 
     mc "And the only way you can keep doing that job is for you to do this surgery, Winston."
@@ -123,16 +139,23 @@ show son surprise with dissolve
 
     ric "If I may interrupt."
 
+    show ric serious with dissolve 
+
     # show ric, looking serious
     ric "Sorry for eavesdropping, but if there's treatment, you have to take it, Winston."
 
     bui "I'm sorry Richter, but that's my decision to make."
 
+    show ric angry 
     ric "Well, then let's make it {b}ours.{/b}"
+
+    show ric serious 
 
     ric "Doc, how quickly can you get a MIMRU shoulder joint?"
 
     bui "You can't mean-"
+
+    show ric shout 
 
     ric "Oh, but I do. Company goes through the rough and tough together!"
 
@@ -140,11 +163,17 @@ show son surprise with dissolve
 
     bui "You don't have to do this..."
 
+    show ric sad 
+
     ric "You didn't have to take us in. You didn't have to take the shit we tried to pull on you. But you did."
 
     ric "The residents here appreciate everything you've done for us. Thank you."
 
+    show ric smile 
+
     ric "And we would like it if you'll stay with us, not as a base, but as our friend."
+
+    show fri happy 
 
     fri "Well, there you have it. You have your new mission. Your tenants need you."
 
@@ -156,9 +185,16 @@ show son surprise with dissolve
 
     bui "Doctor Ward, is it too late to ask you to perform my amputations?"
 
+    show son happy
+
     "Aarul and I smile at that."
 
     mc "It's not. Aarul will be here to assist, if you're okay with that..."
+
+    scene bg controlroom with fade 
+    pause
+    scene bg street_day with fade 
+
 
     # fade to black
     # pause
@@ -166,25 +202,37 @@ show son surprise with dissolve
 
     # show son
 
+    show son groan with dissolve 
+
     son "Whew, that was exhausting. I had no idea how much work is involved in treating a building."
 
     mc "That's why I brought you. This experience will be good for you."
+
+    show son serious 
 
     son "...Thanks."
 
     mc "Something on your mind?"
 
+    show son sad 
+
     son "The other patient - he was shaking when we were replacing his shoulder joint. I think he was afraid."
 
     mc "Yeah. Richter always puts on a brave front, but inside he's the same as the rest of us. He originally didn't want the treatment, either."
 
+    show son sigh 
+    
     son "I think they probably needed each other to go through with it."
 
     "I nod and stretch my arms. Time to head home."
 
+    show son sad 
+
     son "Say, you think they're still talking about the good ol' days in there?"
 
     mc "Oh yeah. And it'll probably go on till morning."
+
+    show son serious 
 
     son "Do you miss those days?"
 
