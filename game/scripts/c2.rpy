@@ -216,6 +216,8 @@ label c2:
 
     GF3 "Fine, lock it up!"
 
+    scene bg flashbacktents with pixellate
+
     #The scene pixelates and skips.
 
     G4 "No {b}fucking{b} way you pulled that shit off. I had the Big Joker {i}and{i} the King!"
@@ -236,6 +238,8 @@ label c2:
 
     "What leads do I have? The towers of data off in the distance, and the missing regions the console can't find.  And then…"
 
+    scene bg flashbacktents with flash
+
     #Gunshot sound SFX, including a flash of white - some sort of clunky sound of a part of a machine falling to the ground
 
     mc "The hell!?"
@@ -247,6 +251,9 @@ label c2:
     "And on the floor by the table, a robot's arm lies, blasted off from the elbow."
 
     ##Include some banter from the card game here, continuing as normal.  For scripting, place/zoom the sprite in a way so the wounded areas are out of frame.
+    4
+    scene bg flashbacktents with zoomin 
+    ## for lee: do this later its probably a camera type thing 
 
     "A large chunk is missing from the robot's head - larger than a man's fist and eclipsing his eye altogether."
 
@@ -323,12 +330,17 @@ label c2:
     "I run some neural scans of as much of the brain as I can, before jacking out and returning to the bar."
 
     ##"---EXITING DIVE---"
+    scene bg flashbacktents with circledive 
+
+    scene street_day with circledive
 
     "I open my eyes and take a deep breath, returning to the back room of the bar."
 
     "The clock on my phone tells me I've been out for longer than I expected to be."
 
     "The bartender opens her eyes, sitting up and stretching her arms to the air with a yawn."
+
+    show bar sigh with dissolve
 
     bar "...What time is it?"
 
@@ -338,11 +350,15 @@ label c2:
 
     "It's looking like tonight is gonna be a long night."
 
+    show bar happy 
+
     bar "Oh!  Since you're done, does that mean I'm better now?"
 
     mc "Afraid not."
 
     mc "I've… got a bit of research to do tonight.  Can't say for sure what's going on off the top of my head."
+
+    show bar surprise
 
     bar "Eh!?"
 
@@ -351,6 +367,8 @@ label c2:
     "...It shouldn't be a physical issue. If it were brain damage the damage would be a lot more widespread."
 
     "We just need to identify what's gone wrong and fix it.  But…"
+
+    show bar snarky
 
     bar "You've got quite the look on your face, doctor."
 
@@ -368,11 +386,15 @@ label c2:
 
     mc "Can I ask for more information about the symptoms?"
 
+    show bar surprise
+
     bar "Whad'ya mean?"
 
     mc "Is there anything  specific that triggers the memory issues?"
 
     mc "Stress, strong emotions, any sort of trigger."
+
+    show bar serious
 
     bar "Not as far as I can tell.  They stress me out a little but that's usually after they already show up."
 
@@ -380,13 +402,19 @@ label c2:
 
     mc "Is there anything that seems to show up consistently?"
 
+    show bar neutral
+
     bar "You've already been in my brain, you know."
 
     mc "Seeing it isn't the same as being there.  I want to hear more."
 
+    show bar sigh 
+
     bar "...I'm not happy about it, so you know."
 
     bar "It's mostly from back when I was a soldier.  Gunshots showing up where they weren't, seeing people with injuries they didn't have at the time."
+
+    show bar sad 
 
     bar "People and faces who aren't with us anymore popping in where they weren't."
 
@@ -396,15 +424,21 @@ label c2:
 
     bar "The people I knew live on in the time we spent.  Whether I'm happy or sad about them doesn't matter.  They're precious to me, all the same."
 
+    show bar sigh
+
     bar "Is that enough for you?"
 
     mc "...It might be, but I don't know for sure."
 
     mc "I'll call you later when I have more to say.  Sounds alright?"
 
+    show bar snarky
+
     bar "Alright, alright.  I'll try and get to bed early tonight."
 
     "She heads out the door, with me following shortly."
+
+    hide bar snarky with dissolve 
 
     "I bring the scans up in front of my eyes, and pour over them on the walk home."
 
@@ -412,13 +446,21 @@ label c2:
 
     ##Time passes here, some sort of bg transition to convey this
 
+    bg scene street_day with blinds
+
     "I pull out my phone and dial up the bartender."
 
+    show bar neutral with dissolve 
+
     bar "Mmph… do you know what time it is?"
+
+    show bar sigh 
 
     "She takes a yawn as she finishes speaking."
 
     mc "Are you available?"
+
+    show bar serious 
 
     bar "Is it good news, or bad news?"
 
@@ -430,9 +472,12 @@ label c2:
 
     mc "Your memories are damaging the rest of your brain."
 
+    show bar surprise
     bar "...I'm sorry, what?"
 
     mc "I said, your memories are--"
+
+    show bar angry
 
     bar "I know what you said, I'm asking how the hell that works."
 
@@ -448,23 +493,34 @@ label c2:
 
     mc "We can take out those memories and the stuff associated with it, and try to repair what's left best we can.  Or we can remove the ones after the war, and isolate the problem memories for repair that way."
 
+    show bar sad 
     bar "...You've gotta be shitting me."
 
     mc "Afraid not."
+
+    show bar angry 
 
     bar "Couldn't have picked a worse time to share the news, could you?"
 
     bar "I'm going back to sleep.  Can't deal with this shit right now."
 
+    hide bar angry 
+
     "She hangs up the phone, and I'm left to the silence once again."
 
     "I start to open up more research sites, when Aarul comes around the corner with a yawn."
+
+    show son neutral with dissolve 
 
     son "...Imi? The hell are you doing? When did you sleep?"
 
     mc "Researching.  Just finished a call with the client, so I'll be heading to bed soon."
 
+    show son surprise
+
     son "Ave."
+
+    show son serious 
 
     son "It's six in the fucking morning."
 
@@ -478,6 +534,8 @@ label c2:
 
     son "The Fuck."
 
+    show son shout 
+
     son "{i}{b}To Sleep!!{/i}{/b}"
 
     mc "I'm sleeping soon, Aarul."
@@ -488,11 +546,15 @@ label c2:
 
     mc "Now now, there's no need for-"
 
+    show son groan 
+
     son "Bullshit!  You'd be up all week again if you could!  Get to bed!"
 
     mc "Alright, alright!  I'm going to bed!"
 
     "I get up from my desk and walk towards my bedroom."
+
+    show son sad 
 
     son "...Hey, could I hear how Liz is doing tomorrow?  Will she be alright?"
 
@@ -500,6 +562,10 @@ label c2:
 
     mc "Talk to you tomorrow."
 
+    show son neutral
+
     son "Yeah.  Night, Imi."
+
+    hide son neutral  
 
     jump choice
