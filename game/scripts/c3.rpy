@@ -1,6 +1,7 @@
 label c3:
 
-    "Twentyone hundred. The night before Eliza   's operation."
+scene bg clinic with dissolve
+    "Twentyone hundred. The night before Eliza's operation."
 
     "We've scheduled the appointment a couple days ago… but she still hasn't said what course of action she wants to take."
 
@@ -8,15 +9,25 @@ label c3:
 
     "Either way, something has to go. I can't imagine it's a pleasant feeling for her."
 
+    scene bg clinic with dissolve
+
+    #move camera to sofa
+
+    show son speaking with dissolve 
+
     son "Hey, Ave? Any idea when Liz's gonna call?"
 
     son "The sooner we know what we're doing, the easier."
 
     mc "Can't say I've any idea. I would've expected it when we set the appointment."
 
+    show son neutral
+
     son "I can see why she'd take her time. I don't envy her."
 
     "Aarul sits on the couch eating a cup of ramen while I go through the scans from Eliza's brain."
+
+    hide son neutral
 
     "There's a mountain of traces of how the disease developed over time - it's definitely getting worse faster than it used to."
 
@@ -38,29 +49,44 @@ label c3:
 
     "Chances are her emotions are all over the place right now. That would mean…"
 
+    show son shout with dissolve
+    #make him bounce instead 
+
     son "Oi! Earth to Ave!"
 
     son "When the hell are you eating something!?"
+
+    show son serious
 
     son "The more you skip meals the harder it'll be to work tomorrow."
 
     mc "I know, I know. You don't need to remind me."
 
+    # move to a fridge in the bg if theres one or some corner
+
     "I get up from the couch, and start rummaging around in the fridge for something to eat."
+
+    show son speaking 
 
     son "Do I need to help you cook, or can you manage it yourself?"
 
     mc "I'll be fine, I'll be fine. I can do something smaller."
 
+    show son happy
+
     son "I don't want you eating smaller, I want you eating healthy."
 
     "Despite my objections, he joins me in the kitchen and starts pulling out the carton of eggs."
+
+    show son serious 
 
     "He stops at the counter, a look of concern on his face."
 
     son "Hey, Ave, I've been wondering... What do you think Liz should do?"
 
     son "She obviously can't just leave things as they are. Otherwise it's going to get worse."
+
+    show son speaking 
 
     son "But I don't know what the right thing to do is."
 
@@ -72,6 +98,8 @@ label c3:
 
     mc "Our place isn't to decide the path their life takes, just to mend the wounds and allow them to live freely."
 
+    show son sad 
+
     son "Well, what'd you do then?"
 
     mc "...Hell if I know."
@@ -80,11 +108,17 @@ label c3:
 
     son "I think… I'd choose to keep the memories here."
 
+    show son speaking
+
     son "I don't remember as much of my old mom and dad as I used to anymore. What I do remember is important, but…"
+
+    show son sad 
 
     son "If I had to choose, I've learned more from you since being here."
 
     son "And the things that I'm proud of most come from the years putting myself back together."
+
+    show son speaking 
 
     son "It'd be different for someone older, but that's what I believe."
 
@@ -98,11 +132,17 @@ label c3:
 
     mc "And the people who need me might be abandoned like the rest."
 
+    show son neutral
+
     son "Well, you wouldn't be alone there, right?"
+
+    show son happy
 
     son "If something like that happened, I'd be around to get you moving again. I don't want you failing yourself either."
 
     son "It isn't just on you to be the best you can be. I'm a part of that too, and so are our friends."
+
+    show son neutral
 
     son "That's how people should act, at least."
 
@@ -116,25 +156,37 @@ label c3:
 
     mc "Thanks, Aarul."
 
+    show son happy
+
     son "Anytime, anytime. Say, could you pass me the--"
 
     ##RING RING BASTARDS
     ##PHONE CALL SFX
     "A ringing sound echoes out from the living room."
 
+    show son shout 
+
     son "What are you waiting for? I'll handle the food, hurry over there!"
+
+    hide son shout with dissolve
 
     "I step over and out of the kitchen, picking up the phone and putting it to my ear."
 
     mc "Evening, Liz."
 
+    show bar sad with dissolve
+
     bar "Evening, Imi. I've got a bitch of a headache right now…"
 
     mc "...Take some rest tonight. If you can."
 
+    show bar sigh 
+
     bar "Thanks."
 
     mc "This about tomorrow's appointment?"
+
+    show bar sad 
 
     bar "...It is."
 
@@ -146,7 +198,12 @@ label c3:
 
     "I take a seat on the couch, laying down while I wait for Eliza to respond."
 
+    #move to the sofa
+
+
     bar "I'm still afraid of losing what I had of them."
+
+    show bar sigh 
 
     bar "But…"
 
@@ -154,9 +211,13 @@ label c3:
 
     bar "For the longest time it was like… these were the people I cared about. The first real friends I had, I guess."
 
+    show bar sad 
+
     bar "I thought if I let myself not care that I was failing myself."
 
     bar "That I'd just be destroying whatever I had left of them, or that after everything we'd been through I just let myself think they didn't matter anymore."
+
+    show bar sigh 
 
     bar "But they'd just get mad if I let that control me."
 
@@ -164,13 +225,19 @@ label c3:
 
     bar "We all wanted to spend what time we had being happy, and to make sure others could live the lives we wanted."
 
+    show bar sad 
+
     bar "...If I sacrificed the life I have now because I couldn't let go, they wouldn't let me live it down."
+
+    show bar sigh 
 
     bar "So…"
 
     "Aarul brings the food over to the table, while I wait for her to finish speaking."
 
     bar "...Even if it's painful, what's best is to let them go."
+
+    show bar sad 
 
     bar "Even if I don't want it, I know it's what's best."
 
@@ -180,17 +247,25 @@ label c3:
 
     mc "...I wish there was another way."
 
+    show bar sigh 
+
     bar "...Me too."
 
     mc "I'll see you tomorrow, then?"
+
+    show bar sad 
 
     bar "Yeah. See you tomorrow."
 
     "And with a click, the deed is done."
 
+    show son speaking with dissolve 
+
     son "Did it go well?"
 
     mc "It went… alright, I suppose."
+
+    hide son speaking
 
     "Aarul and I spend the rest of the night eating our food, winding down before the day concludes."
 
