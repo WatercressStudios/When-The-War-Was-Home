@@ -53,12 +53,12 @@ label c1:
 
     hide bar serious with dissolve 
 
-    scene bg barbackroom with dissolve:
+    scene bg barbackroom with fade:
          ease 3.5
 
     "I follow her up the back stairs to her room, joining her in a couple of chairs she set out ahead of time."
 
-    show bar speaking with dissolve(0.3):
+    show bar speaking with dissolve:
          xalign 0.5 
 
     bar "So, give it to me straight. What's the prognosis?"
