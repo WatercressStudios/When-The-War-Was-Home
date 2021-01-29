@@ -251,7 +251,7 @@ label c2:
     "And on the floor by the table, a robot's arm lies, blasted off from the elbow."
 
     ##Include some banter from the card game here, continuing as normal.  For scripting, place/zoom the sprite in a way so the wounded areas are out of frame.
-    4
+    
     scene bg flashbacktents with zoomin 
     ## for lee: do this later its probably a camera type thing 
 
@@ -446,7 +446,7 @@ label c2:
 
     ##Time passes here, some sort of bg transition to convey this
 
-    bg scene street_day with blinds
+    scene bg street_day with blinds
 
     "I pull out my phone and dial up the bartender."
 
