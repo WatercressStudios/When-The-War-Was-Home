@@ -1,11 +1,23 @@
 label c2:
+
+    scene bg street_day with dissolve
+    scene bg snow_day with dissolve
+
     mc "And you're sure you will have time, right?"
+
+    ## make a side sprite for bar tender
+
+    show bar sigh with dissolve
 
     bar "I'm sure, I'm sure."
 
     "The bartender's voice comes ringing through the other side of the phone, as I walk through the streets to the bar."
 
+    show bar speaking
+
     bar "Now that we know how long it'll take, lunch breaks will last as long as I need them to. I have my shifts covered however long it takes."
+
+    show bar snarky
 
     bar "I know better than to leave you empty handed twice in a row."
 
@@ -13,21 +25,31 @@ label c2:
 
     bar "Cheers to that, I say."
 
+    show bar sigh 
+
     bar "How long until you arrive?"
 
     mc "I'm a few blocks away, five minutes at most."
 
     mc "The sooner I get out from this damned snow the better."
 
+    show bar happy
+
     bar "Shit's darker than my sense of humor."
 
     mc "You don't know the half of it."
 
-    bar "You'd be surprised."
+    show bar snarky
+
+    bar "You' be surprised."
+
+    show bar neutral
 
     bar "Anyway, see you soon.  I'll grab some cookies in case you need a snack."
 
     mc "Later."
+
+    hide bar neutral
 
     "We close the line as I shuffle the phone back into my pocket, chugging my water along the last bit of the way."
 
@@ -41,21 +63,34 @@ label c2:
 
     "...And where war is involved, you aren't likely to ever forget."
 
+    scene bg apartmenthallway with dissolve
+    ##use the one of those renpy camera to make this look different maybe a slow zoom in
+
     "I pull myself up the stairs to the back entrance, knock on the door for the manager to let me through, and move through the hallways until I reach the right room."
 
+    scene bg barbackroom with dissolve
+
+    show bar happy with dissolve
     bar "Welcome, Doc.  Good to see you finally made it."
 
     "The bartender sits at a chair in the corner, eating down a half-full jar of cookies as she bites off a good chunk of one."
 
+    show bar shocked 
+
     bar "...This is some good shit."
+
 
     bar "Have you ever wondered about how weird it is to eat something?"
 
     mc "Not as far as I can remember."
 
+    show bar snarky
+
     "She offers a noncommittal shrug, and I take a seat at a nearby chair, pulling it up to her so we can begin."
 
     mc "Ready?"
+
+    show bar snarky 
 
     bar "Not at all, but it's better to get it over with."
 
@@ -63,17 +98,25 @@ label c2:
 
     "The bartender shifts her eyes, and pulls out a cookie with a smile."
 
+    show bar happy
+
     bar "Uh… you want a snack?"
 
     mc "You know, I'd love to do my job."
 
     "I smirk at her, betraying my patience. This would be hard for anyone."
 
+    show bar snarky 
+
     bar "You aren't making this any easier, you know?"
 
     mc " Ahh don't worry, you won't feel a thing."
 
+    show bar snarky
+
     bar "Easy to say when it's not you."
+
+    show bar sigh
 
     "The bartender sighs, and eats another cookie."
 
@@ -81,7 +124,11 @@ label c2:
 
     mc "Get comfortable.  We can talk about what's in there when you wake up."
 
+    show bar sad
+
     bar "Sure wish we had a bed in here."
+
+    hide bar sad 
 
     "The bartender sweeps her hair out of the way, and brings the jack to the back of her neck."
 
@@ -91,11 +138,21 @@ label c2:
 
     mc "Feeling alright?"
 
+    #side bar sprite again
+
+    show bar serious 
+
     bar "Nothing bad enough to stop here."
+
+    show bar sigh
 
     bar "I'll manage somehow, always have."
 
     mc "See you in a bit, then.  Find a good place to lay down."
+
+    hide bar sigh 
+
+    #hide bg with  circle dive
 
     "I lean back and rest up against the wall, as the bartender rests her head on the table."
 
@@ -103,7 +160,11 @@ label c2:
 
     ##"---COMMENCING DIVE---"
 
+    # show bg with transtion of opening up eyes circle dive
+
     "And when I open my eyes, a field of grey is laid out before me."
+
+    scene bg street_night with dissolve
 
     "A ruined city, with broken walls and shattered windows, and towers of grey rising into the sky."
 
@@ -124,16 +185,20 @@ label c2:
     "...With a few seconds thought, I swipe away the console."
     "The problem is with the memories.  Whatever's going on here, it's best to see it for myself."
 
+    ##camera  movement from left to right
+
     "I look around and survey the area.  A war-torn city in the middle of a battlefield, and a military camp in the middle of a clearing."
 
     ##Maybe the doc recognizes the city from his own time in the war?  If we wanna edit something like that in later we can.
+
+    scene bg flashbacktents with dissolve
 
     "I walk into one of the tents, towards a small group of infantry playing cards around a table."
 
     ##I know nothing about the sorts of card games they could play, someone else write this part.  Include some banter between the soldiers - if you can, soldier sprites w/ some distinctions like different scarf color.  3-5 different ones.
     ###Here ya go, courtesy of Empire
 
-    "I walk into one of the tents, towards a small group of infantry playing cards around a table."
+ 
 
     G1 "What you got on a Moe, partner?"
 
@@ -150,6 +215,8 @@ label c2:
     "The group hollers and laughs."
 
     GF3 "Fine, lock it up!"
+
+    scene bg flashbacktents with pixellate
 
     #The scene pixelates and skips.
 
@@ -171,6 +238,8 @@ label c2:
 
     "What leads do I have? The towers of data off in the distance, and the missing regions the console can't find.  And then…"
 
+    scene bg flashbacktents with flash
+
     #Gunshot sound SFX, including a flash of white - some sort of clunky sound of a part of a machine falling to the ground
 
     mc "The hell!?"
@@ -182,6 +251,9 @@ label c2:
     "And on the floor by the table, a robot's arm lies, blasted off from the elbow."
 
     ##Include some banter from the card game here, continuing as normal.  For scripting, place/zoom the sprite in a way so the wounded areas are out of frame.
+    
+    scene bg flashbacktents with zoomin 
+    ## for lee: do this later its probably a camera type thing 
 
     "A large chunk is missing from the robot's head - larger than a man's fist and eclipsing his eye altogether."
 
@@ -258,12 +330,17 @@ label c2:
     "I run some neural scans of as much of the brain as I can, before jacking out and returning to the bar."
 
     ##"---EXITING DIVE---"
+    scene bg flashbacktents with circledive 
+
+    scene street_day with circledive
 
     "I open my eyes and take a deep breath, returning to the back room of the bar."
 
     "The clock on my phone tells me I've been out for longer than I expected to be."
 
     "The bartender opens her eyes, sitting up and stretching her arms to the air with a yawn."
+
+    show bar sigh with dissolve
 
     bar "...What time is it?"
 
@@ -273,11 +350,15 @@ label c2:
 
     "It's looking like tonight is gonna be a long night."
 
+    show bar happy 
+
     bar "Oh!  Since you're done, does that mean I'm better now?"
 
     mc "Afraid not."
 
     mc "I've… got a bit of research to do tonight.  Can't say for sure what's going on off the top of my head."
+
+    show bar surprise
 
     bar "Eh!?"
 
@@ -286,6 +367,8 @@ label c2:
     "...It shouldn't be a physical issue. If it were brain damage the damage would be a lot more widespread."
 
     "We just need to identify what's gone wrong and fix it.  But…"
+
+    show bar snarky
 
     bar "You've got quite the look on your face, doctor."
 
@@ -303,11 +386,15 @@ label c2:
 
     mc "Can I ask for more information about the symptoms?"
 
+    show bar surprise
+
     bar "Whad'ya mean?"
 
     mc "Is there anything  specific that triggers the memory issues?"
 
     mc "Stress, strong emotions, any sort of trigger."
+
+    show bar serious
 
     bar "Not as far as I can tell.  They stress me out a little but that's usually after they already show up."
 
@@ -315,13 +402,19 @@ label c2:
 
     mc "Is there anything that seems to show up consistently?"
 
+    show bar neutral
+
     bar "You've already been in my brain, you know."
 
     mc "Seeing it isn't the same as being there.  I want to hear more."
 
+    show bar sigh 
+
     bar "...I'm not happy about it, so you know."
 
     bar "It's mostly from back when I was a soldier.  Gunshots showing up where they weren't, seeing people with injuries they didn't have at the time."
+
+    show bar sad 
 
     bar "People and faces who aren't with us anymore popping in where they weren't."
 
@@ -331,15 +424,21 @@ label c2:
 
     bar "The people I knew live on in the time we spent.  Whether I'm happy or sad about them doesn't matter.  They're precious to me, all the same."
 
+    show bar sigh
+
     bar "Is that enough for you?"
 
     mc "...It might be, but I don't know for sure."
 
     mc "I'll call you later when I have more to say.  Sounds alright?"
 
+    show bar snarky
+
     bar "Alright, alright.  I'll try and get to bed early tonight."
 
     "She heads out the door, with me following shortly."
+
+    hide bar snarky with dissolve 
 
     "I bring the scans up in front of my eyes, and pour over them on the walk home."
 
@@ -347,13 +446,21 @@ label c2:
 
     ##Time passes here, some sort of bg transition to convey this
 
+    scene bg street_day with blinds
+
     "I pull out my phone and dial up the bartender."
 
+    show bar neutral with dissolve 
+
     bar "Mmph… do you know what time it is?"
+
+    show bar sigh 
 
     "She takes a yawn as she finishes speaking."
 
     mc "Are you available?"
+
+    show bar serious 
 
     bar "Is it good news, or bad news?"
 
@@ -365,9 +472,12 @@ label c2:
 
     mc "Your memories are damaging the rest of your brain."
 
+    show bar surprise
     bar "...I'm sorry, what?"
 
     mc "I said, your memories are--"
+
+    show bar angry
 
     bar "I know what you said, I'm asking how the hell that works."
 
@@ -383,23 +493,34 @@ label c2:
 
     mc "We can take out those memories and the stuff associated with it, and try to repair what's left best we can.  Or we can remove the ones after the war, and isolate the problem memories for repair that way."
 
+    show bar sad 
     bar "...You've gotta be shitting me."
 
     mc "Afraid not."
+
+    show bar angry 
 
     bar "Couldn't have picked a worse time to share the news, could you?"
 
     bar "I'm going back to sleep.  Can't deal with this shit right now."
 
+    hide bar angry 
+
     "She hangs up the phone, and I'm left to the silence once again."
 
     "I start to open up more research sites, when Aarul comes around the corner with a yawn."
+
+    show son neutral with dissolve 
 
     son "...Imi? The hell are you doing? When did you sleep?"
 
     mc "Researching.  Just finished a call with the client, so I'll be heading to bed soon."
 
+    show son surprise
+
     son "Ave."
+
+    show son serious 
 
     son "It's six in the fucking morning."
 
@@ -413,6 +534,8 @@ label c2:
 
     son "The Fuck."
 
+    show son shout 
+
     son "{i}{b}To Sleep!!{/i}{/b}"
 
     mc "I'm sleeping soon, Aarul."
@@ -423,11 +546,15 @@ label c2:
 
     mc "Now now, there's no need for-"
 
+    show son groan 
+
     son "Bullshit!  You'd be up all week again if you could!  Get to bed!"
 
     mc "Alright, alright!  I'm going to bed!"
 
     "I get up from my desk and walk towards my bedroom."
+
+    show son sad 
 
     son "...Hey, could I hear how Liz is doing tomorrow?  Will she be alright?"
 
@@ -435,6 +562,10 @@ label c2:
 
     mc "Talk to you tomorrow."
 
+    show son neutral
+
     son "Yeah.  Night, Imi."
+
+    hide son neutral  
 
     jump choice
