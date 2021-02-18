@@ -19,6 +19,9 @@ define GF3 = Character("Player 5", who_color="#fff")
 define bui = Character("Winston", callback=speaker("bui"), who_color="#fff")
 define fri = Character("Charlotte", callback=speaker("fri"), who_color="#fff")
 define Girl = Character("Little Girl", who_color="#fff", what_color="fff")
+define p = Character(kind=nvl,  what_xalign="0.5", window_xalign="0.5", what_text_align="0.5", what_color="#39ff14")
+define flash = Fade(0.1, 0.0, 0.1, color="#FFFFFF")
+
 
 
 #transitions

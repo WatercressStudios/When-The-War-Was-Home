@@ -1,8 +1,4 @@
 label e2:
-    #nvl mode
-    #green text with a different font
-    #center everything
-    #add the shake attribute
     "As I navigate the web of her memories, I'm able to see, touch, smell, and hear everything that she has experienced."
 
     "I easily find the source of her emotional turmoil."

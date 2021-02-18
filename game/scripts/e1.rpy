@@ -7,7 +7,7 @@ label e1:
 
     "A tidy white picket fence is almost glowing in the midday sun."
 
-    "Within the yard, an old woman sings a classic song to herself as she tends to her flower garden."
+    "Within the yard, {w=0.3} an old woman sings a classic song to herself as she tends to her flower garden."
     #footsteps end abruptly
     #Imani is awestruck
     
@@ -15,33 +15,33 @@ label e1:
 
     m "ain’t no valley low enough"
 
-    "I pause, unwilling to interrupt her tranquil focus."
+    "I pause, {w=0.3} unwilling to interrupt her tranquil focus."
 
     "An unexpected smile spreads across my face."
 
-    "The woman notices me, and with a warm, friendly smile, her face brightens."
+    "The woman notices me, {w=0.3} and with a warm, {w=0.3} friendly smile, her face brightens."
     #happy talking
     m "I like that you're punctual, hun. It's poor manners to keep an old woman waiting. I'm Miranda Bates."
 
-    "I blush a bit, quickly disarmed by her friendly warmth."
+    "I blush a bit, {w=0.3} quickly disarmed by her friendly warmth."
 
-    mc "Pleased to make your acquaintance, ma'am. So I hear that you're having some trouble sleeping?"
+    mc "Pleased to make your acquaintance, {w=0.3} ma'am. So I hear that you're having some trouble sleeping?"
 
-    m "You know, I'm not one for asking for much help, truth be told. But I heard that there was a doctor in the neighborhood who might be able to help me."
+    m "You know, {w=0.3} I'm not one for asking for much help, truth be told. But I heard that there was a doctor in the neighborhood who might be able to help me."
 
-    mc "Do you live here alone, Miranda?"
+    mc "Do you live here alone, {w=0.3} Miranda?"
 
     "Miranda looks down and heaves a sigh."
 
-    m "'Fraid so, yes."
+    m "'Fraid so, {w=0.3} yes."
 
-    mc "Aside from your issues sleeping, how is life treating you?"
+    mc "Aside from your issues sleeping, {w=0.3} how is life treating you?"
 
-    m "My life's been pretty boring for a while now, but at my age that's a blessing. I like my movies, and love my classics. Simple pleasures for a simple gal."
+    m "My life's been pretty boring for a while now, {w=0.3} but at my age that's a blessing. I like my movies, and love my classics. Simple pleasures for a simple gal."
 
-    m "It would be nice to sleep through the night, for a change, though."
+    m "It would be nice to sleep through the night, {w=0.3} for a change, though."
 
-    mc "Let's talk about your sleeping problems, then. Can you describe what's going on? Anything you've observed that might be affecting your quality of sleep?"
+    mc "Let's talk about your sleeping problems, {w=0.3} then. Can you describe what's going on? Anything you've observed that might be affecting your quality of sleep?"
 
     m "Well, I've taken to not sleeping straight through the night most nights. I keep having the same nightmare about a little girl, she's cryin', but I can't help her."
 
@@ -63,19 +63,19 @@ label e1:
 
     mc "May I take a look at your memories and see what I can do?"
 
-    m "Oh, I have never had anyone do that to me before."
+    m "Oh, {w=0.3} I have never had anyone do that to me before."
 
-    mc "Don't worry, it is painless and safe. I promise. You can just sit and relax on your porch while I work. Is that okay?"
+    mc "Don't worry, {w=0.3} it is painless and safe. I promise. You can just sit and relax on your porch while I work. Is that okay?"
 
-    m "Go 'head, doctor. Let me get you a chair, hun."
+    m "Go 'head, {w=0.3} doctor. Let me get you a chair, {w=0.3} hun."
 
     "Miranda fetches me a chair to sit in, and I orient it behind her and prepare to work."
 
-    "Miranda gently rocks back in her chair, admiring the view of her vibrant garden and the lush, green lawn."
+    "Miranda gently rocks back in her chair, {w=0.3} admiring the view of her vibrant garden and the lush, {w=0.3} green lawn."
 
     "I carefully plug into the back of her neck."
 
-    "Miranda tenses briefly, before relaxing and closing her eyes."
+    "Miranda tenses briefly, {w=0.3} before relaxing and closing her eyes."
 
     "Time appears to speed up, and reality begins to slowly distort until it fades away, replaced with something else entirely"
     scene black with dissolve
