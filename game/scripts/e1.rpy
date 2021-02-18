@@ -1,11 +1,17 @@
 label e1:
+    scene bg house_day with dissolve:
+        zoom 3 align (0.0, 1.0)
+        linear 120 align (1.0, 1.0)
+    #add footsteps of Imani walking here.
     "Whew, it's hot today."
 
     "A tidy white picket fence is almost glowing in the midday sun."
 
     "Within the yard, an old woman sings a classic song to herself as she tends to her flower garden."
-
-    m "Oh baby there ain’t no mountain high enough"
+    #footsteps end abruptly
+    #Imani is awestruck
+    
+    m "{cps=3}Oh baby there ain’t no mountain high enough"
 
     m "ain’t no valley low enough"
 
@@ -14,7 +20,7 @@ label e1:
     "An unexpected smile spreads across my face."
 
     "The woman notices me, and with a warm, friendly smile, her face brightens."
-
+    #happy talking
     m "I like that you're punctual, hun. It's poor manners to keep an old woman waiting. I'm Miranda Bates."
 
     "I blush a bit, quickly disarmed by her friendly warmth."
@@ -72,4 +78,5 @@ label e1:
     "Miranda tenses briefly, before relaxing and closing her eyes."
 
     "Time appears to speed up, and reality begins to slowly distort until it fades away, replaced with something else entirely"
+    scene black with dissolve
     jump e2
